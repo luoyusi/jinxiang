@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>镜像社区</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/weiran.css">
+</head>
+<script src="js/jquery-3.1.0.js"></script>
+<script>
+    window.onload=function(){
+        var weiran_nav=document.getElementsByClassName('weiran_nav')[0];
+        var  bars=weiran_nav.getElementsByTagName('span')[0];
+        var bars_color=bars.getElementsByTagName('i')[0];
+        var bars_con=weiran_nav.getElementsByTagName("p")[0];
+        //-----------------------------
+        var toggle=0;
+        bars.onclick=function(){
+            if(toggle==0){
+                bars_con.className='ac';
+                bars.className='color';
+                toggle=1;
+            }else{
+                bars_con.className='';
+                toggle=0;
+                bars.className='';
+            }
+
+        }
+        //---------瀑布流-----------------
+        var margin = 15;//这里设置间距
+        var li=$("#waterfall>li");//这里是区块名称
+        li.attr("style","-webkit-transition: all .7s ease-out .1s; -moz-transition: all .7s ease-out; -o-transition: all .7s ease-out .1s; transition: all .7s ease-out .1s");
+        var	li_W = li[0].offsetWidth+margin;//取区块的实际宽度（包含间距，这里使用源生的offsetWidth函数，不适用jQuery的width()函数是因为它不能取得实际宽度，例如元素内有pandding就不行了）
+        function weiran(){//定义成函数便于调用
+            var h=[];//记录区块高度的数组
+            var n = parseInt(document.documentElement.offsetWidth/li_W);//窗口的宽度除以区块宽度就是一行能放几个区块
+            console.log(n);
+            for(var i = 0;i < li.length;i++) {//有多少个li就循环多少次
+                li_H = li[i].offsetHeight;//获取每个li的高度
+                if(i <n) {//n是一行最多的li，所以小于n就是第一行了
+                    h[i]=li_H;//把每个li放到数组里面
+                    li.eq(i).css("top",0);//第一行的Li的top值为0
+                    li.eq(i).css("left",i * li_W);//第i个li的左坐标就是i*li的宽度
+                }
+                else{
+                    min_H =Math.min.apply(null,h) ;//取得数组中的最小值，区块中高度值最小的那个
+                    minKey = getarraykey(h, min_H);//最小的值对应的指针
+                    h[minKey] += li_H+margin ;//加上新高度后更新高度值
+                    li.eq(i).css("top",min_H+margin);//先得到高度最小的Li，然后把接下来的li放到它的下面
+                    li.eq(i).css("left",minKey * li_W);	//第i个li的左坐标就是i*li的宽度
+                }
+//                $("h3").eq(i).text("编号："+i+"，高度："+li_H);//把区块的序号和它的高度值写入对应的区块H3标题里面
+            }
+        }
+        /* 使用for in运算返回数组中某一值的对应项数(比如算出最小的高度值是数组里面的第几个) */
+        function getarraykey(s, v) {for(k in s) {if(s[k] == v) {return k;}}}
+        /*这里一定要用onload，因为图片不加载完就不知道高度值*/
+            weiran();
+        /*浏览器窗口改变时也运行函数*/
+//        window.onresize = function() {weiran();};
+    }
+</script>
+<body>
+    <div class="weiran_nav">
+        <ul>
+            <li>
+                <span><i class="fa fa-bars"></i></span>
+
+                <p><i class="sanjiao"></i><a>人物</a><a>风景</a><a>艺术</a><a>创意</a><a>广告</a><a>夜景</a><a>场景</a><a>唯美</a><a>喜庆</a><a>清新</a><a>产品</a><a>人物</a><a>风景</a><a>艺术</a><a>创意</a><a>广告</a><a>夜景</a><a>场景</a><a>唯美</a><a>夜景</a><a>喜庆</a><a>清新</a><a>产品</a></p>
+                <input type="text" placeholder="搜索下更喜欢">
+
+                    <a class="txt">镜像</a>
+                    <a class="jiantou">
+                        <i></i>
+                        <form>
+                            <label>全部<input name="classify" type="radio"/></label>
+                            <label>镜像<input name="classify" type="radio"/></label>
+                            <label>文章<input name="classify" type="radio"/></label>
+
+                        </form>
+                    </a>
+                    <a class="shousuo"><i class="fa fa-search"></i></a>
+
+
+            </li>
+            <li class="nav_center"><img src="images/logo1.jpg"/> </li>
+            <li class="nav_right">
+              <i> << </i> <a href="index.html">返回镜像首页</a><i>|</i><a href="#">登录</a><i>|</i><a href="#">注册</a>
+            </li>
+        </ul>
+    </div>
+    <div class="weiran_cont">
+        <ul id="waterfall">
+            <li class="tag"><p>热门标签</p><a>人物</a><a>风景</a><a>艺术</a><a>创意</a><a>广告</a><a>夜景</a><a>场景</a><a>唯美</a><a>喜庆</a><a>清新</a><a>产品</a></li>
+            <li>
+                <div class="pic">
+                    <a href="cont.html">
+                    <div class="mark"><span></span></div>
+                     <img src="images/tupian.jpg"/></a>
+
+                </div>
+
+                <h5>美女模特</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/tupian2.jpeg"/>
+                </div>
+
+                <h5>摄像师</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/11111.jpeg"/>
+                </div>
+
+                <h5>美女</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/1111.jpeg"/>
+                </div>
+
+                <h5>孙永珠</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/weiran2.jpeg"/>
+                </div>
+
+                <h5>孙永珠</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/weiran1.jpeg"/>
+                </div>
+
+                <h5>孙永珠</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/weiran.jpeg"/>
+                </div>
+
+                <h5>孙永珠</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/weiran6.jpg"/>
+                </div>
+
+                <h5>孙永珠</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/weiran5.jpeg"/>
+                </div>
+
+                <h5>孙永珠</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/tupian.jpg"/>
+                </div>
+
+                <h5>美女模特</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/tupian.jpg"/>
+                </div>
+
+                <h5>美女模特</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/tupian.jpg"/>
+                </div>
+
+                <h5>美女模特</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/tupian2.jpeg"/>
+                </div>
+
+                <h5>摄像师</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/11111.jpeg"/>
+                </div>
+
+                <h5>美女</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/1111.jpeg"/>
+                </div>
+
+                <h5>孙永珠</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/weiran2.jpeg"/>
+                </div>
+
+                <h5>孙永珠</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/weiran1.jpeg"/>
+                </div>
+
+                <h5>孙永珠</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/weiran.jpeg"/>
+                </div>
+
+                <h5>孙永珠</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/weiran6.jpg"/>
+                </div>
+
+                <h5>孙永珠</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/weiran5.jpeg"/>
+                </div>
+
+                <h5>孙永珠</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/tupian.jpg"/>
+                </div>
+
+                <h5>美女模特</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+            <li>
+                <div class="pic">
+                    <div class="mark"><span></span></div>
+                    <img src="images/tupian.jpg"/>
+                </div>
+
+                <h5>孙永珠</h5>
+                <div class="txt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div>
+                        <a><i class="fa fa-comment"></i>0</a>
+                        <a><i class="fa fa-heart"></i>0</a>
+                    </div>
+                </div>
+
+
+
+                <h4>暂时没有评论,你可以成为第一人</h4>
+
+            </li>
+
+        </ul>
+    </div>
+    <!--<div class="weiran_footer">-->
+        <!--<p>唯然是觉唯网的图片分享社区，以记录美丽、分享美好的创意理念，分享高品质创意、艺术、设计、时尚、插画、摄影、唯美类精美图片。</p>-->
+        <!--<p>Copyright © 2016 唯然 - 觉唯设计. Powered by Wordpress. Theme by Javin. All Rights Reserved.</p>-->
+    <!--</div>-->
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>兑换</title>
+
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<style>
+.banner{width:100%;background:url(images/shop-bg.png) no-repeat;text-align:center;height:250px;}
+.banner h3{font-size:28px;font-weight:normal;color:#fff;line-height:47px;padding-top:113px;}
+.banner p{font-weight:normal;color:#fff;line-height:23px;margin-bottom:67px;}
+.main{background:#f1f1f1;}
+.main .inner{width:1260px;}
+.main .inner .ul{width:23%;height:60px;text-align:center;border-bottom:1px solid #ccc;padding:0px 38%;margin:0px auto;}
+.main .inner .ul li{padding-top:4px;width:48px;line-height:56px;margin:0px 22px;float:left;font-size:14px;text-align:center;}
+.main .inner .ul li a{color:#000;}
+/*.main .ul li:hover{border-bottom:1px solid #666;}*/
+.ac{border-bottom:1px solid #666;}
+.main .content{height:376px;}
+.main .content .cont-item{padding:20px 0px 60px 0px;display:none;}
+.main .content .cont-item ul{margin-bottom:58px;}
+.main .content .cont-item ul li{background:#fff;float:left;width:274px;height:269px;padding:10px 14px 16px 14px;border-left:1px solid #e8e8e8;border-right:1px solid #e8e8e8;border-bottom:2px solid #d8d8d8 ;border-top:none;margin-right:18px;position:relative;}
+.main .content .cont-item ul li .position{position:absolute;left:0px;bottom:3px;padding:15px;color:#777;}
+.main .content .cont-item ul li .pic{z-index:-100;}
+.main .content .cont-item ul li .pic img{z-index:-100;}
+.main .content .cont-item ul li .pic p{line-height:18px;display:none;margin-top:0px;}
+.main .content .cont-item ul li .cont{line-height:18px;margin-top:0px;margin-bottom:15px;}
+.main .content .cont-item ul li .bottom1{height:24px;}
+.main .content .cont-item ul li .bottom1 p{float:left;color:#ea4c89;height:24px;line-height:17px;}
+.main .content .cont-item ul li .bottom1 p span{font-size:24px;margin-right:3px;line-height:24px;}
+.main .content .cont-item ul li .bottom1 .exchanges{float:right;margin-right:15px;width:68px;height:24px;line-height:24px;background:#ea4c89;color:#fff;text-align:center;border-radius:2px;}
+.main .content .cont-item ul li .bottom1 .exchanges a{color:#fff;}
+
+/*******************-----尾部----*********************/
+.bottom{ background:#222; height:160px; width:100%; padding-top:40px;}
+.bottom .inner{border-bottom:1px solid #313131; height:159px; z-index:50;}
+.bottom .wei{ width:40%; padding-right:70px; float:left; }
+.bottom .wei h3{ line-height:36px; font-size:16px; color:#b2b2b2;} 
+.bottom .wei p{ line-height:20px; font:14px;color: #999;}
+.bottom dl{ float:left; width:10%; padding:0 0px 20px 0;}
+.bottom dl a{ transition:all 0.6s; color: #999;}
+.bottom dl dt{ font-size:14px; color:#b2b2b2; line-height:35px; }
+.bottom dl dd{ line-height:21px; font:12px;}
+.bottom dl a:hover{ color:#b2b2b2;text-decoration:underline; }
+.bottom .lxfs{ width:24%; float:left;}
+.bottom .lxfs h3{ line-height:35px; color:#b2b2b2; font-size:16px; }
+.bottom .lxfs p{ line-height:21px; font:14px; margin-bottom:9px;color: #999;}
+.bottom .lxfs .text{ width:53%; height:26px; border:1px solid #323232; margin-bottom:20px; background:#1b1b1b; color:rgba(255,255,255,0.9); margin-right:6px; }
+.bottom .lxfs .sub{ width:18%; height:28px; background:#00a398; border-radius:5px; margin-bottom:20px; color:#b2b2b2; }
+.bottom .lxfs .sub:hover{ color:#fff; }
+.bottom .lxfs li{ float:left;}
+.bottom .lxfs li i{width:30px; height:30px;  background:#1b1b1b; color:#b2b2b2; text-align:center; line-height:30px; border-radius:4px; font-size:16px; margin-right:8px; transition:all 0.7s; }
+.bottom .lxfs li:nth-child(1) i:hover{ background:#79ac21; color:#fff;}
+.bottom .lxfs li:nth-child(2) i:hover{ background:#ff664e; color:#fff;}
+.bottom .lxfs li:nth-child(3) i:hover{ background:#e05fef; color:#fff;}
+.bottom .lxfs li:nth-child(4) i:hover{ background:#00c3f4; color:#fff;}
+.bottom .lxfs li:nth-child(5) i:hover{ background:#f39c12; color:#fff;} 
+
+.footer{height:40px; background:#222; width:100%; padding-top:18px;}
+.footer .inner p{ font-size:14px; color:#999;}
+.footer .inner p span{ color:#00c3b6;font-size: 12px;}
+
+/*******************-----效果----*********************/
+.main .content .cont-item ul li .pic{overflow:hidden;}
+.main .content .cont-item ul li .pic img{transition:all 0.6s;}
+.main .content .cont-item ul li .pic:hover img{margin-top:-10px;transition:all 0.6s;}
+.main .content .cont-item ul li .pic:hover p{color:#000;line-height:10px;transition:all 0.6s 3s;display:block;z-index:20;}
+
+
+@media  screen and (max-width:1470px){
+	.inner{width:98%}
+	.main .inner ul{width:50%;}
+	.main .inner .content{width:48%;}
+	.main .content .cont-item ul li{width:35%;height:99%;float:left;}
+		
+}
+
+</style>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/widget.js"></script>
+<script type="text/javascript" src="js/选项卡.js"></script>
+<script src="js/index_header.js"></script>
+<script>
+window.onload=function(){
+//---------选项卡----------------------------
+	show();
+//---------图片向上移动----------------------------
+	run();
+	
+//---------头部---------------------------	
+	header();
+}
+</script>
+</head>
+
+<body style="background:#222">
+<div class="header">
+        <ul class="inner">
+            <ul id="logo">
+                <li class="logo"><a href="index.html"><img src="imgs/logo.png"></a> </li>
+                <li><a href="article.html">文章</a></li>
+                <li><a href="Appreciate.html">欣赏</a></li>
+                <li><a href="sucai.html">素材</a></li>
+                <li><a href="exchange.html">兑换</a></li>
+                <li><a href="activity.html">活动</a></li>
+                <li><a href="weiran.html">社区</a></li>
+                <li class="more">
+                    <a href="more.html">更多</a>
+                </li>
+            </ul>
+            <div class="header-right">
+                <ul>
+                    <li class="yang">
+                        <a id="search_btn" href="#"><i class="fa fa-search"></i></a>
+                        <div class="header-search">
+                            <span><i class="fa fa-search"></i></span>
+                            <input type="text" placeholder="输入关键字搜索…"/>
+                        </div>
+
+                    </li>
+                    <li class="btn-l"><a href="">登录</a></li>
+                    <li class="btn-r"><a href="">注册</a></li>
+
+                </ul>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+
+<div class="banner">
+	<div class="inner">
+        <h3>镜币商店 精彩不停</h3>
+        <p>Jiawin shop constantly exciting</p>
+        <div class="clear"></div>
+    </div>
+</div>    
+<div class="main">
+	<div class="inner">
+        <ul class="ul">
+            <li><a href="javascript:;">全部</a></li>
+            <li><a href="javascript:;">主题</a></li>
+            <li><a href="javascript:;">其他</a></li>
+        </ul>
+        <div class="clear"></div>
+        <div class="content">
+            <div class="cont-item" style="display:block">
+                <ul>
+                    <li>
+                        <div class="pic"><a href="javascript:;"><img src="images/28114347fff64c0848d229c.jpg"/><p>支持、体验、补差价专用</p></a></div>
+                        <div class="position">
+                        	<div class="cont">此商品仅用于支持网站、体验购物流程时使用，感谢有你的支持。</div>
+                        	<div class="bottom1"><p><span>1</span>镜币</p><div class="exchanges"><a href="javascript:;">前往兑换</a></div></div>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="pic"><a href="javascript:;"><img src="images/0210200125b2916b5c49db6.jpg"/><p>支持、体验、补差价专用</p></a></div>
+                        <div class="position">
+                            <div class="cont">以用户体验摄影为创作理念，拥有两套精致的皮肤主题，完美适应各种屏幕。</div>
+                            <div class="bottom1"><p><span>149</span>镜币</p><div class="exchanges"><a href="javascript:;">前往兑换</a></div></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="cont-item">
+                <ul>
+                    <li>
+                        <div class="pic"><a href="javascript:;"><img src="images/0210200125b2916b5c49db6.jpg"/><p>支持、体验、补差价专用</p></a></div>
+                        <div class="position">
+                            <div class="cont">此商品仅用于支持网站、体验购物流程时使用，感谢有你的支持。</div>
+                            <div class="bottom1"><p><span>149</span>镜币</p><div class="exchanges"><a href="javascript:;">前往兑换</a></div></div>
+                        </div>
+                    </li>
+                 </ul>
+                 <div class="clear"></div>
+            </div>
+            <div class="cont-item">
+                <ul>
+                    <li> 
+                        <div class="pic"><a href="javascript:;"><img src="images/28114347fff64c0848d229c.jpg"/><p>支持、体验、补差价专用</p></a></div>
+                        <div class="position">
+                            <div class="cont">此商品仅用于支持网站、体验购物流程时使用，感谢有你的支持。</div>
+                            <div class="bottom1"><p><span>1</span>镜币</p><div class="exchanges"><a href="javascript:;">前往兑换</a></div></div>
+                        </div>
+                    </li>
+                 </ul>
+                 <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bottom">
+	<div class="inner">
+    	<div class="wei">
+        	<h3>镜像</h3>
+            <p>以用户为中心的摄影理念，专注于用户体验摄影，拥有国内外最新的摄影潮流趋势、独特而美的创意视觉、新颖而灵敏的思维意识、极致而生动的交互体验，更有严谨而通俗的技术教程！</p>
+            <p>唯然是镜像网的图片分享社区，以记录美丽、分享美好的创意理念，分享高品质创意、艺术、摄影、时尚、插画、摄影、唯美类精美图片。</p>
+        </div>
+        <dl>
+        	<dt>关于</dt>
+            <dd><a href="#">关于镜像</a></dd>
+            <dd><a href="#">留言联系</a></dd>
+            <dd><a href="#">友情链接</a></dd>
+            <dd><a href="#">负责声明</a></dd>
+            <dd><a href="#">网站地图</a></dd>
+        </dl>
+         <dl>
+        	<dt>栏目</dt>
+            <dd><a href="#">用户体验</a></dd>
+            <dd><a href="#">素材下载</a></dd>
+            <dd><a href="#">摄影欣赏</a></dd>
+            <dd><a href="#">主题商城</a></dd>
+            <dd><a href="#">唯然灵感</a></dd>
+        </dl>
+         <dl>
+        	<dt>友链</dt>
+            <dd><a href="#">前端观察</a></dd>
+            <dd><a href="#">手Q阅读中心</a></dd>
+            <dd><a href="#">FrozenUI</a></dd>
+            <dd><a href="#">摄影达人</a></dd>
+            <dd><a href="#">MAKA</a></dd>
+        </dl>
+        <div class="lxfs">
+        	<h3>关注</h3>
+            <p>Email: javin@jiawin.com</p>
+            <input class="text" type="text" placeholder="请输入您的邮箱"><input class="sub" type="submit" value="订阅">
+            <ul>
+            	<li><a href="#"><i class="fa fa-weibo"></i></a></li>
+                <li><a href="#"><i class="fa fa-tencent-weibo"></i></a></li>
+                <li><a href="#"><i class="fa fa-qq"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-weixin"></i></a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+<div class="clear"></div>
+<div class="footer">
+	<div class="inner">
+    	<p>Copyright © 2012-2016 <span>镜像摄影</span> Theme by <span>Javin zhong</span> All All Rights Reserved. 粤ICP备12073831号-1</p>
+    </div>
+</div>
+
+</body>
+</html>

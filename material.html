@@ -1,0 +1,504 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>欣赏</title>
+<link href="css/styel.css" rel="stylesheet">
+<link href="css/Appreciate.css" rel="stylesheet">
+<link rel="stylesheet" href="css/index_header.css">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<script src="js/index_header.js"></script>
+<script>
+window.onload=function(){
+	var oUl=document.getElementById('menu');
+	var aLi=oUl.getElementsByTagName('li');
+	for(var i=0; i<aLi.length; i++){
+		aLi[i].onmouseover=function(){
+			var subMenu=this.getElementsByTagName('ul');
+			subMenu[0].style.display='block';
+			this.className='ac';
+		};
+		aLi[i].onmouseout=function(){
+			var subMenu=this.getElementsByTagName('ul');
+			subMenu[0].style.display='none';
+			this.className='';
+		};
+	};
+	header();
+};
+</script>
+
+</head>
+
+<body>
+    <div class="header">
+        <ul class="subnav">
+            <li class="logo"><a href="index.html"><img src="imgs/logo.png"></a> </li>
+                <li><a href="article.html">文章</a></li>
+                <li><a href="Appreciate.html">欣赏</a></li>
+                <li><a href="sucai.html">素材</a></li>
+                <li><a href="exchange.html">兑换</a></li>
+                <li><a href="activity.html">活动</a></li>
+                <li><a href="weiran.html">社区</a></li>
+                <li class="more">
+                    <a href="more.html">更多</a>
+                </li>
+        </ul>
+        <div class="inner" id="head_inner">
+            <div class="phnav">
+                <a id="phonenav"><i class="fa fa-bars"></i></a>
+                <span><img src="images/logo.png"/> </span>
+                <a class="user"><i class="fa fa-user"></i></a>
+            </div>
+            <ul id="logo">
+                 <li class="logo"><a href="index.html"><img src="imgs/logo.png"></a> </li>
+                <li><a href="article.html">文章</a></li>
+                <li><a href="Appreciate.html">欣赏</a></li>
+                <li><a href="sucai.html">素材</a></li>
+                <li><a href="exchange.html">兑换</a></li>
+                <li><a href="activity.html">活动</a></li>
+                <li><a href="weiran.html">唯然</a></li>
+                <li class="more">
+                    <a href="more.html">更多</a>
+                </li>
+            </ul>
+            <div class="header-right">
+                <ul>
+                    <li class="yang">
+                        <a id="search_btn" href="#"><i class="fa fa-search"></i></a>
+                        <div class="header-search">
+                            <span><i class="fa fa-search"></i></span>
+                            <input type="text" placeholder="输入关键字搜索…"/>
+                        </div
+                    ></li>
+                    <li class="btn-l"><a href="">登录</a></li>
+                    <li class="btn-r"><a href="">注册</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="inner">
+            <div class="menu">
+                <ul id="menu">
+                    <li>
+                    	<i class="fa fa-bookmark"></i>
+                    	<a>不限类别</a>
+                        <i class="fa fa-caret-down arrow"></i>
+                    	<ul class="menutwo">
+                        	<li><a href="#">图标素材</a></li>
+                        	<li><a href="#">PS资源</a></li>
+                        	<li><a href="#">矢量资源</a></li>
+                        	<li><a href="#">高清图片</a></li>
+                        	<li><a href="#">字体资源</a></li>
+                        	<li><a href="#">前端代码</a></li>
+                        	<li><a href="#">网页模板</a></li>
+                        	<li class="last"><a href="#">3D素材</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<i class="fa fa-sort"></i>
+                    	<a>最新发布</a>
+                        <i class="fa fa-caret-down arrow"></i>
+                    	<ul class="menutwo">
+                        	<li><a href="#">喜欢最多</a></li>
+                        	<li><a href="#">浏览最多</a></li>
+                        	<li class="last"><a href="#">评论最多</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<i class="fa fa-clock-o"></i>
+                    	<a>不限时间</a>
+                        <i class="fa fa-caret-down arrow"></i>
+                    	<ul class="menutwo">
+                        	<li><a href="#">一周内</a></li>
+                        	<li><a href="#">一月内</a></li>
+                        	<li class="last"><a href="#">一年内</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+<!----------article------------------------------------------------------------------------------------------------------------------------------->
+            <div class="article clearfix">
+                <ul class="clearfix">
+<!------------------1----------------------------------------------------------------------------------------------------------------------------->
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/17112804c81e728d9d4c2f6.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="一点点">一点点</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">高清图片</a>
+                                    <span>879</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">3周前</div>
+                                <span class="words">2</span>
+                                <span class="like">0</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------2----------------------------------------------------------------------------------------------------------------------------->
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/3100210558f4f4dd53c907b.png" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="色彩丰富的多媒体图标">色彩丰富的多媒体图标</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">图片素材</a>
+                                    <span>1006</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2016-01-31</div>
+                                <span class="words">7</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------3----------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/30235826cc21c218d1d33a5.png" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="[推荐]简约线条天气图标">[推荐]简约线条天气图标</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">图标素材</a>
+                                    <span>3009</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2016-01-31</div>
+                                <span class="words">11</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------4----------------------------------------------------------------------------------------------------------------------------->    
+                    <li class="marginRight">
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/03121912069ad204815112b.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="274个免费线性图标">274个免费线性图标</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">图标素材</a>
+                                    <span>3241</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2015-06-03 </div>
+                                <span class="words">27</span>
+                                <span class="like">3</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------5----------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/2501153345adecdb34ad840.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="印章模型效果图PSD模板">印章模型效果图PSD模板</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">酷站欣赏</a>
+                                    <span>6209</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2015-01-25 </div>
+                                <span class="words">24</span>
+                                <span class="like">0</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------6----------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/11142740471ca07ef98e219.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="45个Dashel免费图标资源（包含Icons、SVG、PSD、PNG）">45个Dashel免费图标资源（包含Icons、SVG、PSD、PNG）</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">摄影艺术</a>
+                                    <span>3286</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2015-01-11 </div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------7----------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/05101659f382545c7c0e8f0.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="20个免费岂止于大的高分辨率几何多边形背景">20个免费岂止于大的高分辨率几何多边形背景</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">平面设计</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2015-01-05</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------8----------------------------------------------------------------------------------------------------------------------------->    
+                    <li class="marginRight">
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/252231300064082081f4295.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="WOW：移动应用程序界面App UI设计">WOW：移动应用程序界面App UI设计</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">摄影艺术</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2014-12-25</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------9----------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/2413464025b2916b5c49db6.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="珍品！超100+免费旅游图标素材（包含Icons、PNG、SVG）">珍品！超100+免费旅游图标素材（包含Icons、PNG、SVG）</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">摄影艺术</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2014-12-24</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------10---------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/15105114becea0c5e013dcc.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="25个免费精美扁平化圣诞节图标下载">25个免费精美扁平化圣诞节图标下载</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">摄影艺术</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2014-12-15</div>
+                                <span class="words">17</span>
+                                <span class="like">2</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------11---------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/09105058d52d2ff63db12e6.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="Prettify Photoshop Actions人物美化PS动作">Prettify Photoshop Actions人物美化PS动作</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">摄影艺术</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2014-12-09</div>
+                                <span class="words">12</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------12----------------------------------------------------------------------------------------------------------------------------->    
+                    <li class="marginRight">
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/07234007e15468ddd60e364.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="Summer UI Kit 免费模板组件">Summer UI Kit 免费模板组件</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">3D艺术</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2014-12-08</div>
+                                <span class="words">29</span>
+                                <span class="like">3</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------13---------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/19120043f1661f6c7c2d46c.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="30个免费的优秀商业名片PSD模板">30个免费的优秀商业名片PSD模板</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">平面设计</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2014-08-19</div>
+                                <span class="words">55</span>
+                                <span class="like">9</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------14---------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/Photoshop-Plugin-for-Web-Designers-1.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="网页设计师常用的Photoshop插件">网页设计师常用的Photoshop插件</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">平面设计</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2013-06-06</div>
+                                <span class="words">45</span>
+                                <span class="like">20</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------15---------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/Pressable-CSS-Buttons.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="Pressable CSS Buttons – 多种颜色和形状的CSS按钮">Pressable CSS Buttons – 多种颜色和形状的CSS按钮</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">平面设计</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2013-01-18</div>
+                                <span class="words">13</span>
+                                <span class="like">6</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------16---------------------------------------------------------------------------------------------------------------------------->    
+                    <li class="marginRight">
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/gemicon-cover.png" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="Gemicon Icon Set – 600个免费高品质图标（PNG+PSD）">Gemicon Icon Set – 600个免费高品质图标（PNG+PSD）</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">平面设计</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2013-01-07</div>
+                                <span class="words">7</span>
+                                <span class="like">8</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="bottom">
+        <div class="inner">
+            <div class="wei">
+                <h3>觉唯</h3>
+                <p>以用户为中心的设计理念，专注于用户体验设计，拥有国内外最新的设计潮流趋势、独特而美的创意视觉、新颖而灵敏的思维意识、极致而生动的交互体验，更有严谨而通俗的技术教程！</p>
+                <p>唯然是觉唯网的图片分享社区，以记录美丽、分享美好的创意理念，分享高品质创意、艺术、设计、时尚、插画、摄影、唯美类精美图片。</p>
+            </div>
+            <dl>
+                <dt>关于</dt>
+                <dd><a href="#">关于觉唯</a></dd>
+                <dd><a href="#">留言联系</a></dd>
+                <dd><a href="#">友情链接</a></dd>
+                <dd><a href="#">负责声明</a></dd>
+                <dd><a href="#">网站地图</a></dd>
+            </dl>
+             <dl>
+                <dt>栏目</dt>
+                <dd><a href="#">用户体验</a></dd>
+                <dd><a href="#">素材下载</a></dd>
+                <dd><a href="#">设计欣赏</a></dd>
+                <dd><a href="#">主题商城</a></dd>
+                <dd><a href="#">唯然灵感</a></dd>
+            </dl>
+             <dl>
+                <dt>友链</dt>
+                <dd><a href="#">前端观察</a></dd>
+                <dd><a href="#">手Q阅读中心</a></dd>
+                <dd><a href="#">FrozenUI</a></dd>
+                <dd><a href="#">设计达人</a></dd>
+                <dd><a href="#">MAKA</a></dd>
+            </dl>
+            <div class="lxfs">
+                <h3>关注</h3>
+                <p>Email: javin@jiawin.com</p>
+                <input class="text" type="text" placeholder="请输入您的邮箱"><input class="sub" type="submit" value="订阅">
+                <ul>
+                    <li><a href="#"><i class="fa fa-weibo"></i></a></li>
+                    <li><a href="#"><i class="fa fa-tencent-weibo"></i></a></li>
+                    <li><a href="#"><i class="fa fa-qq"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#"><i class="fa fa-weixin"></i></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="footer">
+        <div class="inner">
+            <p>Copyright © 2012-2016 <span>觉唯设计</span> Theme by <span>Javin zhong</span> All All Rights Reserved. 粤ICP备12073831号-1</p>
+        </div>
+    </div>
+
+</body>
+</html>

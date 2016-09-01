@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+a,body,center,dd,del,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,i,img,ul,li,ol,p,span{margin:0; padding:0}
+li{list-style:none;}
+a{text-decoration:none; color:#666;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+img{border:0;}
+i{font-style:normal;}
+input{border:0; outline:none;}
+body{font:12px/1.5  "Microsoft Yahei"; color:#333; font-weight:400;}
+.inner{width:1260px;margin:0 auto;}
+.marginRight{margin-right:0px !important;}
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+	}
+.clearfix{*zoom:1;}
+
+

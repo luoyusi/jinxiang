@@ -1,0 +1,503 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>欣赏</title>
+<link href="css/styel.css" rel="stylesheet">
+<link href="css/Appreciate.css" rel="stylesheet">
+<link rel="stylesheet" href="css/index_header.css">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<script src="js/index_header.js"></script>
+<script>
+window.onload=function(){
+	var oUl=document.getElementById('menu');
+	var aLi=oUl.getElementsByTagName('li');
+	for(var i=0; i<aLi.length; i++){
+		aLi[i].onmouseover=function(){
+			var subMenu=this.getElementsByTagName('ul');
+			subMenu[0].style.display='block';
+			this.className='ac';
+		};
+		aLi[i].onmouseout=function(){
+			var subMenu=this.getElementsByTagName('ul');
+			subMenu[0].style.display='none';
+			this.className='';
+		};
+	};
+	header();
+};
+</script>
+
+</head>
+
+<body>
+    <div class="header">
+        <ul class="subnav">
+             <li><a href="article.html">文章</a></li>
+            <li><a href="Appreciate.html">欣赏</a></li>
+            <li><a href="sucai.html">素材</a></li>
+            <li><a href="exchange.html">兑换</a></li>
+            <li><a href="activity.html">活动</a></li>
+            <li><a href="weiran.html">社区</a></li>
+            <li class="more">
+                <a href="more.html">更多</a>
+            </li>
+        </ul>
+        <div class="inner" id="head_inner">
+            <div class="phnav">
+                <a id="phonenav"><i class="fa fa-bars"></i></a>
+                <span><img src="images/logo.png"/> </span>
+                <a class="user"><i class="fa fa-user"></i></a>
+            </div>
+            <ul id="logo">
+                <li class="logo"><a href="index.html"><img src="images/logo.png"/></a> </li>
+                <li><a href="article.html">文章</a></li>
+                <li><a href="Appreciate.html">欣赏</a></li>
+                <li><a href="sucai.html">素材</a></li>
+                <li><a href="exchange.html">兑换</a></li>
+                <li><a href="activity.html">活动</a></li>
+                <li><a href="weiran.html">唯然</a></li>
+                <li class="more">
+                    <a href="more.html">更多</a>
+                </li>
+            </ul>
+            <div class="header-right">
+                <ul>
+                    <li class="yang">
+                        <a id="search_btn" href="#"><i class="fa fa-search"></i></a>
+                        <div class="header-search">
+                            <span><i class="fa fa-search"></i></span>
+                            <input type="text" placeholder="输入关键字搜索…"/>
+                        </div
+                    ></li>
+                    <li class="btn-l"><a href="">登录</a></li>
+                    <li class="btn-r"><a href="">注册</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="inner">
+            <div class="menu">
+                <ul id="menu">
+                    <li>
+                    	<i class="fa fa-bookmark"></i>
+                    	<a>不限类别</a>
+                        <i class="fa fa-caret-down arrow"></i>
+                    	<ul class="menutwo">
+                        	<li><a href="#">平面设计</a></li>
+                        	<li><a href="#">摄影艺术</a></li>
+                        	<li><a href="#">绘画艺术</a></li>
+                        	<li><a href="#">3D艺术</a></li>
+                        	<li><a href="#">酷站欣赏</a></li>
+                        	<li><a href="#">空间设计</a></li>
+                        	<li><a href="#">工业设计</a></li>
+                        	<li class="last"><a href="#">交互设计</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<i class="fa fa-sort"></i>
+                    	<a>最新发布</a>
+                        <i class="fa fa-caret-down arrow"></i>
+                    	<ul class="menutwo">
+                        	<li><a href="#">喜欢最多</a></li>
+                        	<li><a href="#">浏览最多</a></li>
+                        	<li class="last"><a href="#">评论最多</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<i class="fa fa-clock-o"></i>
+                    	<a>不限时间</a>
+                        <i class="fa fa-caret-down arrow"></i>
+                    	<ul class="menutwo">
+                        	<li><a href="#">一周内</a></li>
+                        	<li><a href="#">一月内</a></li>
+                        	<li class="last"><a href="#">一年内</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+<!----------article------------------------------------------------------------------------------------------------------------------------------->
+            <div class="article clearfix">
+                <ul class="clearfix">
+<!------------------1----------------------------------------------------------------------------------------------------------------------------->
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/13133308c4ca4238a0b9238.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="通天河的两岸形成了多种类型的草原牧场">通天河的两岸形成了多种类型的草原牧场</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">酷站欣赏</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">1天前</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------2----------------------------------------------------------------------------------------------------------------------------->
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/13132815c4ca4238a0b9238.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="新疆境内的博罗科努山山脚下刚刚春暖花开">新疆境内的博罗科努山山脚下刚刚春暖花开</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">酷站欣赏</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">1天前</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------3----------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/13132719a87ff679a2f3e71.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="早春的伊犁河谷，一种被称作“老鸦蒜”的野花">早春的伊犁河谷，一种被称作“老鸦蒜”的野花</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">酷站欣赏</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">1天前</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------4----------------------------------------------------------------------------------------------------------------------------->    
+                    <li class="marginRight">
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/1313225577e14374fe2eb36.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="雪岭云杉与草甸分布在伊犁哈萨克自治州拉提草原">雪岭云杉与草甸分布在伊犁哈萨克自治州拉提草原</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">酷站欣赏</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">1天前</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------5----------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/13132030099fb995346f31c.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="三亚马术馆">三亚马术馆</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">酷站欣赏</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">1天前</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------6----------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/121437520dc4003bb3b4a5e.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="RGB：Photography by David Benoliel 美國攝影師作品">RGB：Photography by David Benoliel 美國攝影師作品</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">摄影艺术</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2天前</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------7----------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/06113053d37b3a733d8baf0.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="世界最大最长的珊瑚礁群：大堡礁">世界最大最长的珊瑚礁群：大堡礁</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">平面设计</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2016-05-06</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------8----------------------------------------------------------------------------------------------------------------------------->    
+                    <li class="marginRight">
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/03141453d3d9446802a4425.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="西双版纳：热带雨林的马赛克拼接">西双版纳：热带雨林的马赛克拼接</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">摄影艺术</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2016-05-03</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------9----------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/18134842ac32629e262cf2f.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="雪域花海">雪域花海</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">摄影艺术</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2016-04-18</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------10---------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/181139225d7b9adcbe1c629.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="新疆伊犁河谷的喀拉峻">新疆伊犁河谷的喀拉峻</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">摄影艺术</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2016-04-18</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------11---------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/1021503225b2916b5c49db6.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="自夏日寺以下，通天河江面逐渐收拢">自夏日寺以下，通天河江面逐渐收拢</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">摄影艺术</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2016-04-10</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------12----------------------------------------------------------------------------------------------------------------------------->    
+                    <li class="marginRight">
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/29095831367ceca4d1350d4.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="通天河的泉华彩池">通天河的泉华彩池</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">3D艺术</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2016-03-29</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------13---------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/211951047ad657ab2ce6265.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="大理崇圣寺三塔">大理崇圣寺三塔</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">平面设计</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2016-03-21</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------14---------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/15133707faeac4e1eef307c.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="浙江浦江·龙德寺塔">浙江浦江·龙德寺塔</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">平面设计</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2016-03-20</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------15---------------------------------------------------------------------------------------------------------------------------->    
+                    <li>
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/18153947a9ea03aff2205ac.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="山西太原·开化寺连理塔">山西太原·开化寺连理塔</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">平面设计</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2016-03-20</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+<!------------------16---------------------------------------------------------------------------------------------------------------------------->    
+                    <li class="marginRight">
+                    	<div class="item">
+                        	<div class="pic"><a href="#"><span></span><img src="images/06210459ce28c124117ed1f.jpg" /></a></div>
+                            <div class="title">
+                            	<h4><a href="#" title="江苏苏州·寒山寺普明塔">江苏苏州·寒山寺普明塔</a></h4>
+                            	<div class="extra">
+                                	<i class="fa fa-bookmark fa-left"></i>
+                                	<a href="#">平面设计</a>
+                                    <span>86</span>
+                                    <i class="fa fa-fire fa-right"></i>
+                                </div>
+                            </div>
+                            <div class="data clearfix">
+                            	<div class="time">2016-03-06</div>
+                                <span class="words">2</span>
+                                <span class="like">1</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="bottom">
+        <div class="inner">
+            <div class="wei">
+                <h3>觉唯</h3>
+                <p>以用户为中心的设计理念，专注于用户体验设计，拥有国内外最新的设计潮流趋势、独特而美的创意视觉、新颖而灵敏的思维意识、极致而生动的交互体验，更有严谨而通俗的技术教程！</p>
+                <p>唯然是觉唯网的图片分享社区，以记录美丽、分享美好的创意理念，分享高品质创意、艺术、设计、时尚、插画、摄影、唯美类精美图片。</p>
+            </div>
+            <dl>
+                <dt>关于</dt>
+                <dd><a href="#">关于觉唯</a></dd>
+                <dd><a href="#">留言联系</a></dd>
+                <dd><a href="#">友情链接</a></dd>
+                <dd><a href="#">负责声明</a></dd>
+                <dd><a href="#">网站地图</a></dd>
+            </dl>
+             <dl>
+                <dt>栏目</dt>
+                <dd><a href="#">用户体验</a></dd>
+                <dd><a href="#">素材下载</a></dd>
+                <dd><a href="#">设计欣赏</a></dd>
+                <dd><a href="#">主题商城</a></dd>
+                <dd><a href="#">唯然灵感</a></dd>
+            </dl>
+             <dl>
+                <dt>友链</dt>
+                <dd><a href="#">前端观察</a></dd>
+                <dd><a href="#">手Q阅读中心</a></dd>
+                <dd><a href="#">FrozenUI</a></dd>
+                <dd><a href="#">设计达人</a></dd>
+                <dd><a href="#">MAKA</a></dd>
+            </dl>
+            <div class="lxfs">
+                <h3>关注</h3>
+                <p>Email: javin@jiawin.com</p>
+                <input class="text" type="text" placeholder="请输入您的邮箱"><input class="sub" type="submit" value="订阅">
+                <ul>
+                    <li><a href="#"><i class="fa fa-weibo"></i></a></li>
+                    <li><a href="#"><i class="fa fa-tencent-weibo"></i></a></li>
+                    <li><a href="#"><i class="fa fa-qq"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#"><i class="fa fa-weixin"></i></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="footer">
+        <div class="inner">
+            <p>Copyright © 2012-2016 <span>觉唯设计</span> Theme by <span>Javin zhong</span> All All Rights Reserved. 粤ICP备12073831号-1</p>
+        </div>
+    </div>
+
+</body>
+</html>

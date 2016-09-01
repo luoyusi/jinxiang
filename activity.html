@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>活动</title>
+
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<style>
+body{background:#222;}
+/*.header{width:100%;height:50px;background-color:#000;color:#fff;font-size:20px;font-family: ziti1;
+    position: fixed;opacity: 0.5; z-index:100}
+.header .inner ul{float:left;position:relative;padding-left:105px;}
+.header .inner ul li {display:inline-block;margin-top:0;}
+.header .inner ul li:hover a{color:rgba(255,255,255,0.3);}
+.header .inner>ul>li>a{margin:0 32px;line-height:50px;color:rgba(255,255,255,0.8);font-family: "Microsoft YaHei UI";font-size:14px;transition: all 1s;}
+.header .inner>ul .logo a{margin:0;margin-right:68px;margin-top:6px;display:inline-block;line-height:0px;}
+.header .inner>ul .logo{position:absolute;left:-7px;}
+.header .inner .header-right{float: right;  position: relative;padding-top:9px;}
+.header .inner .header-right span{
+    position: absolute;left:10px;top:6px;}
+
+.header .inner .header-right ul li{float: left;width:54px;height:32px;margin-left:1px;line-height:32px;text-align: center;background-color:#757575;font-size:15px;position: relative;}
+.header .inner .header-right ul li a{color:#fff;font-size:12px;}
+.header .inner .header-right ul li:hover  a{color:rgba(255,255,255,0.3);}
+.header .inner .header-right ul .yang{background-color:transparent;}
+.header .inner .header-right ul .header-search {width:0px;position:absolute;right:8px;top:-8px;overflow: hidden;z-index:10;transition: all 1s;}
+.header .inner .header-right ul  .yang .ac{display:none;}
+.header .inner .header-right ul .header-search span i{color:rgba(0,0,0,0.5);}
+.header .inner .header-right ul .header-search input{width:160px;height:32px;margin-top:8px;padding-left:30px;line-height:32px;border-radius: 5px;}
+.header .inner .header-right ul .btn-l{border-radius: 5px 0 0 5px;}
+.header .inner .header-right ul .btn-r{border-radius: 0 5px 5px 0;}
+.header .inner .header-right ul a i{font-size:15px;}*/
+
+.banner{width:100%;background:url(images/special-bg.jpg) no-repeat;text-align:center;height:200px;}
+.banner h3{font-size:28px;font-weight:normal;color:#fff;line-height:47px;padding-top:90px;}
+.banner p{font-weight:normal;color:#fff;line-height:23px;margin-bottom:67px;}
+.main{background:#f1f1f1;}
+.main .ul{width:15%;margin:0px auto;height:60px;border-bottom:1px solid #ccc;padding:0px 42.35%;}
+.main .ul li{padding-top:4px;width:48px;line-height:56px;margin:0px 22px;float:left;font-size:14px;text-align:center;}
+.main .ul li a{color:#000;}
+/*.main .ul li:hover{border-bottom:1px solid #666;}*/
+.ac{border-bottom:1px solid #666;}
+.main .content{padding-bottom:60px;}
+.main .content .cont-item{padding:40px 0px 70px 70px;display:none;background:#fff;border-left:1px solid #e8e8e8;border-right:1px solid #e8e8e8;border-bottom:2px solid #d8d8d8 ;border-top:none;}
+.main .content .cont-item ul{}
+.main .content .cont-item ul li{background:#fff;float:left;width:530px;height:250px;}
+.main .content .cont-item ul li .pic{position:relative;text-align:center;transition:all 1s;width:530px;height:250px;}
+.main .content .cont-item ul li .pic img{width:100%;height:100%;}
+.main .content .cont-item ul li .pic .icons{width:90px;height:90px;position:absolute;background:url(images/activity-status.png) no-repeat left -180px;z-index:99;margin-left:-5px;margin-top:-5px;}
+.main .content .cont-item ul li .pic .cover{width:100%;height:250px;position:absolute;left:0;top:0;z-index:90;}
+.main .content .cont-item ul li .pic .cover:hover{background:rgba(0,0,0,0.7);}
+.main .content .cont-item ul li .pic .share{color:#fff;opacity:0;font-size:24px;position:absolute;left:42%;top:33%;border:2px solid #fff;padding:25px;border-radius:50%;width:20px;height:20px;line-height:20px;text-align:center;transition:all 0.3s;}
+.main .content .cont-item ul li .pic:hover .share{line-height:20px;transition:all 0.7s;opacity:1;transform:rotate(30deg) scale(1.2);transform-origin:center 41px;}
+.main .content .cont-item ul li .pic p{line-height:18px;margin-top:10px;display:none;}
+.main .content .cont-item ul li .cont{line-height:18px;margin-top:10px;margin-bottom:20px;}
+
+.main .content .cont-item ul li:hover a{color:#00a398;}
+.main .content .cont-item ul li .bottom1{border-bottom:1px solid #e1e1e1;}
+.main .content .cont-item ul li .bottom1 p{margin-top:20px;float:left;transition: all 0.5s;font-size:14px;}
+.main .content .cont-item ul:hover p{color:#00c3b6;transition: all 0.6s;}
+.main .content .cont-item ul li .bottom1 p span{font-size:24px;margin-right:3px;line-height:24px;}
+.main .content .cont-item ul li .bottom1 .exchanges{float:right;width:68px;text-align:center;color:#999;font-size:12px;margin-top:20px;}
+.main .content .cont-item ul li .bottom1 .exchanges a{color:#fff;}
+
+.bottom{ background:#222; height:160px; width:100%; padding-top:40px;}
+.bottom .inner{border-bottom:1px solid #313131; height:159px; z-index:50;}
+.bottom .wei{ width:40%; padding-right:70px; float:left; }
+.bottom .wei h3{ line-height:36px; font-size:16px; color:#b2b2b2;} 
+.bottom .wei p{ line-height:20px; font:14px;color:#999;}
+.bottom dl{ float:left; width:10%; padding:0 0px 20px 0;}
+.bottom dl a{ transition:all 0.6s; color:#999;}
+.bottom dl dt{ font-size:14px; color:#b2b2b2; line-height:35px; }
+.bottom dl dd{ line-height:21px; font:12px;}
+.bottom dl a:hover{ color:#b2b2b2;text-decoration:underline; }
+.bottom .lxfs{ width:24%; float:left;}
+.bottom .lxfs h3{ line-height:35px; color:#b2b2b2; font-size:16px; }
+.bottom .lxfs p{ line-height:21px; font:14px; margin-bottom:9px;color:#999;}
+.bottom .lxfs .text{ width:53%; height:26px; border:1px solid #323232; margin-bottom:20px; background:#1b1b1b; color:rgba(255,255,255,0.9); margin-right:6px; }
+.bottom .lxfs .sub{ width:18%; height:28px; background:#00a398; border-radius:5px; margin-bottom:20px; color:#b2b2b2; }
+.bottom .lxfs .sub:hover{ color:#fff; }
+.bottom .lxfs li{ float:left;}
+.bottom .lxfs li i{width:30px; height:30px;  background:#1b1b1b; color:#b2b2b2; text-align:center; line-height:30px; border-radius:4px; font-size:16px; margin-right:8px; transition:all 0.7s; }
+.bottom .lxfs li:nth-child(1) i:hover{ background:#79ac21; color:#fff;}
+.bottom .lxfs li:nth-child(2) i:hover{ background:#ff664e; color:#fff;}
+.bottom .lxfs li:nth-child(3) i:hover{ background:#e05fef; color:#fff;}
+.bottom .lxfs li:nth-child(4) i:hover{ background:#00c3f4; color:#fff;}
+.bottom .lxfs li:nth-child(5) i:hover{ background:#f39c12; color:#fff;} 
+
+.footer{ height:40px; background:#222; width:100%; padding-top:18px; }
+.footer p{ font-size:14px; color:#999;}
+.footer p span{ color:#00c3b6;font-size:12px;}
+
+@media  screen and (max-width:1470px){
+	.inner{width:97%}
+	.main .inner ul{width:13%;}
+	.main .inner .content{width:98%;}
+	.main .content .cont-item ul li{width:500%;height:500%;}
+	.main .content .cont-item ul li .pic{width:98%;}
+	.main .content .cont-item ul li .pic .cover{width:100%;}
+	.main .content .cont-item ul li .pic img{width:100%;height:100%;}	
+}
+
+@media screen and (max-width:750px){
+	.main .content .cont-item ul li{width:700%;height:700%;}
+}
+</style>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/widget.js"></script>
+<script type="text/javascript" src="js/选项卡.js"></script>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/index_header.js"></script>
+<script>
+window.onload=function(){
+//---------选项卡----------------------------
+	show();
+//---------图片向上移动----------------------------
+	run();
+	
+	var pic=document.getElementById("pic");
+	var cover=document.getElementsByClassName("cover")
+	
+//---------头部---------------------------	
+	header();
+}
+
+
+//$(function(){
+//	$(".pic").mousemove(function(){
+//		$(".cover").fadeIn("normal")
+//	)
+//	$(".pic").mouseout(function(){
+//		$(".cover").fadeOut("normal");
+//	)
+//       
+//})
+</script>
+</head>
+
+<body>
+
+<div class="header">
+    <ul class="inner">
+        <ul id="logo">
+           <li class="logo"><a href="index.html"><img src="imgs/logo.png"></a> </li>
+                <li><a href="article.html">文章</a></li>
+                <li><a href="Appreciate.html">欣赏</a></li>
+                <li><a href="sucai.html">素材</a></li>
+                <li><a href="exchange.html">兑换</a></li>
+                <li><a href="activity.html">活动</a></li>
+                <li><a href="weiran.html">社区</a></li>
+                <li class="more">
+                    <a href="more.html">更多</a>
+                </li>
+        </ul>
+        <div class="header-right">
+            <ul>
+                <li class="yang">
+                    <a id="search_btn" href="#"><i class="fa fa-search"></i></a>
+                    <div class="header-search">
+                        <span><i class="fa fa-search"></i></span>
+                        <input type="text" placeholder="输入关键字搜索…"/>
+                    </div>
+    
+                </li>
+                <li class="btn-l"><a href="">登录</a></li>
+                <li class="btn-r"><a href="">注册</a></li>
+    
+            </ul>
+    
+        </div>
+        <div class="clear"></div>
+</div>
+        
+<div class="banner">
+	<div class="inner">
+        <h3>活动 · 专题</h3>
+        <p>Activities and topics</p>
+        <div class="clear"></div>
+    </div>
+</div>    
+<div class="main">
+	<div class="inner">
+        <ul class="ul">
+            <li><a href="javascript:;">全部</a></li>
+            <li><a href="javascript:;">赛事</a></li>
+        </ul>
+        <div class="clear"></div>
+        <div class="content">
+            <div class="cont-item" style="display:block">
+                <ul>
+                    <li>
+                        <div class="pic"  id="pic">
+                            <i class="icons"></i>
+                            <a href="javascript:;"><img src="images/wKgBzFSn6ANA4237.tub.jpg"/></a>
+                            <a href="#">
+                                <div class="cover">
+                                    <i id="share" class="share fa fa-share"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bottom1"><p>让镜像再次唤醒你的摄影天赋 – 2015 创意摄影大赛</p><div class="exchanges">2015-08-10</div><div class="clear"></div></div>
+                        
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="cont-item">
+                <ul>
+                    <li>
+                        <div class="pic"  id="pic">
+                            <i class="icons"></i>
+                            <a href="javascript:;"><img src="images/wKgBzFYl802Acbn2AAKtKzU0QQk761.tub.jpg"/></a>
+                            <a href="#">
+                                <div class="cover">
+                                    <i id="share" class="share fa fa-share"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bottom1"><p>让镜像再次唤醒你的摄影天赋 – 2015 创意摄影大赛</p><div class="exchanges">2015-08-10</div><div class="clear"></div></div>
+                        
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bottom">
+	<div class="inner">
+    	<div class="wei">
+        	<h3>镜像</h3>
+            <p>以用户为中心的摄影理念，专注于用户体验摄影，拥有国内外最新的摄影潮流趋势、独特而美的创意视觉、新颖而灵敏的思维意识、极致而生动的交互体验，更有严谨而通俗的技术教程！</p>
+            <p>唯然是镜像网的图片分享社区，以记录美丽、分享美好的创意理念，分享高品质创意、艺术、摄影、时尚、插画、摄影、唯美类精美图片。</p>
+        </div>
+        <dl>
+        	<dt>关于</dt>
+            <dd><a href="#">关于镜像</a></dd>
+            <dd><a href="#">留言联系</a></dd>
+            <dd><a href="#">友情链接</a></dd>
+            <dd><a href="#">负责声明</a></dd>
+            <dd><a href="#">网站地图</a></dd>
+        </dl>
+         <dl>
+        	<dt>栏目</dt>
+            <dd><a href="#">用户体验</a></dd>
+            <dd><a href="#">素材下载</a></dd>
+            <dd><a href="#">摄影欣赏</a></dd>
+            <dd><a href="#">主题商城</a></dd>
+            <dd><a href="#">唯然灵感</a></dd>
+        </dl>
+         <dl>
+        	<dt>友链</dt>
+            <dd><a href="#">前端观察</a></dd>
+            <dd><a href="#">手Q阅读中心</a></dd>
+            <dd><a href="#">FrozenUI</a></dd>
+            <dd><a href="#">摄影达人</a></dd>
+            <dd><a href="#">MAKA</a></dd>
+        </dl>
+        <div class="lxfs">
+        	<h3>关注</h3>
+            <p>Email: javin@jiawin.com</p>
+            <input class="text" type="text" placeholder="请输入您的邮箱"><input class="sub" type="submit" value="订阅">
+            <ul>
+            	<li><a href="#"><i class="fa fa-weibo"></i></a></li>
+                <li><a href="#"><i class="fa fa-tencent-weibo"></i></a></li>
+                <li><a href="#"><i class="fa fa-qq"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-weixin"></i></a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+<div class="clear"></div>
+<div class="footer">
+	<div class="inner">
+    	<p>Copyright © 2012-2016 <span>镜像摄影</span> Theme by <span>Javin zhong</span> All All Rights Reserved. 粤ICP备12073831号-1</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+.weiran_nav{padding:2px 0;border-bottom:1px solid #ccc;position:fixed;width:100%;background:#fff;z-index:1000;}
+.weiran_nav ul{width:90%;margin:0 auto;}
+.weiran_nav ul li{display:inline-block;line-height:55px;position:relative;}
+.weiran_nav ul li>span{width:46px;height:30px;box-shadow: 0 0 5px #ccc inset;border:1px solid #ccc;
+    border-radius: 2px;display:inline-block;line-height:30px;text-align: center;margin-right:10px;}
+.weiran_nav ul li>span>i{font-size:18px;color:#ccc;}
+.weiran_nav ul li>p{width:540px;height:501px;position:absolute;background-color: #fff;
+z-index:10;top:62px;display:none;z-index:100;}
+.weiran_nav ul li>p a{color:#ccc;}
+.weiran_nav ul li>p a:hover{color:#333;cursor:pointer;}
+.weiran_nav ul li .ac{display:block;}
+.weiran_nav ul li .color i{color:#16ad76;}
+
+.weiran_nav ul li>p a{width:160px;height:34px;display:inline-block;padding-left:10px;}
+.weiran_nav ul li p .sanjiao{width:0px;height:0;border-bottom:16px solid #fff;border-left:16px solid transparent;
+    border-right:16px solid transparent;border-top:16px solid transparent;position:absolute;top:-32px;left:7px;z-index:100;}
+.weiran_nav ul li>input{width:168px;height:30px;box-shadow: 0 0 5px #ccc inset;border:1px solid #ccc;border-radius: 2px;
+padding-left:58px;}
+.weiran_nav ul li>ul{position:absolute;top:0;color:#ccc;left:70px;}
+.weiran_nav ul li>a{display:inline-block;line-height:30px;color:#ccc;font-size:14px;}
+.weiran_nav ul li>.txt{position:absolute;left:70px;top:11px;}
+.weiran_nav ul li>.jiantou{position:absolute;left:104px;top:11px;
+    }
+.weiran_nav ul li>.shousuo{width:16px;height:16px;position:absolute;left:259px;top:12px;}
+.weiran_nav ul li> .jiantou form{width:226px;position:absolute;top:26px;left:-43px;border:1px solid #ccc;background:#fff;display:none;}
+.weiran_nav ul li> .jiantou i{width:10px;height:5px;background:url("../images/icon.png") no-repeat right -333px;
+    transition: all 0.5s;display:inline-block;}
+.weiran_nav ul li> .jiantou form label{height:18px;padding:8px;display:block;width:210px;line-height:18px;color:#ccc;}
+.weiran_nav ul li> .jiantou form label input{float:right;/*appearance:none;
+    -webkit-appearance:none;border:10px solid #ccc;border-radius: 50%;*/ }
+.weiran_nav ul li> .jiantou:hover i{transform: rotate(180deg);}
+.weiran_nav ul li> .jiantou:hover form{display:block;}
+.weiran_nav ul li> .jiantou form label:hover{background:#efefef;}
+.weiran_nav ul .nav_center{width:70%;text-align: center;margin:0 auto;}
+.weiran_nav ul .nav_center img{position:absolute;top:-30px;left:50%;top:50%;transform: translate(-50%,-50%);}
+.weiran_nav ul .nav_right{color:#ccc;line-height:55px;}
+.weiran_nav ul .nav_right i{margin:0 8px;}
+
+.weiran_cont {padding-top:60px;
+   background-color:#efefef;}
+.weiran_cont ul{width:98%;margin:0 auto;position:relative;}
+.weiran_cont>ul>li{width:250px;border:1px solid #ccc;border-radius: 5px;
+    box-shadow: 1px 1px 5px #666;background:#fff;display:inline-block;position:absolute;left: 0px; top: 0;}
+.weiran_cont ul>.tag{padding:16px 0 5px 10px;background-color: #fff;width:240px;}
+.weiran_cont ul .tag p{color:green;margin-bottom:10px;font-size:16px;}
+.weiran_cont ul .tag a{background:#f8f8f8;color:#8f8f8f;display:inline-block;padding:6px 10px;border-radius: 5px;
+    border:1px solid #dddbdb;margin-left:10px;margin-bottom:10px;transition: all 0.5s;font-size:12px;}
+.weiran_cont ul .tag a:hover{background:#79ac21;color:#fff;}
+.weiran_cont ul li .pic{position:relative;width:250px;max-height:796px;overflow: hidden;}
+.weiran_cont ul li .pic img{width:100%;display:block;}
+.weiran_cont ul li .pic .mark{width:100%;height:100%;position:absolute;top:0;left:0;background:rgba(0,0,0,0.6);transition: all 0.7s;z-index:100;opacity: 0;}
+.weiran_cont ul li .pic:hover .mark{opacity: 1;}
+.weiran_cont ul li .pic .mark span{width:90px;height:40px;background:url("../images/iconssss.png") no-repeat;display:inline-block;
+    position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);}
+.weiran_cont ul li h5{padding-top:9px;line-height:27px;padding-left:9px;font-weight: normal;color:#666;font-size:14px;}
+.weiran_cont ul li .txt{height:25px;border-bottom:1px solid #ccc;position:relative;left:0;}
+.weiran_cont ul li .txt ul{padding-left:9px;width:54%;position:absolute;left:0;display:none;}
+.weiran_cont ul li .txt:hover ul{display:block;}
+.weiran_cont ul>li>.txt>ul>li{display:inline-block;width:20px;height:25px;
+    background:url("../images/iconss.png") no-repeat;border:0;box-shadow:0 0 0 transparent;}
+.weiran_cont ul li .txt ul li:nth-child(1){background-position: 0 -75px;}
+.weiran_cont ul li .txt ul li:nth-child(2){background-position: 0 -115px;}
+.weiran_cont ul li .txt ul li:nth-child(3){background-position: 0 -235px;}
+.weiran_cont ul li .txt ul li:nth-child(4){background-position: 0 -195px;}
+.weiran_cont ul li .txt ul li:nth-child(5){background-position: 0 -1115px ;}
+.weiran_cont ul li .txt ul li:nth-child(6){background-position: 0 -1155px;}
+.weiran_cont ul li .txt>div{float:right;}
+.weiran_cont ul li .txt>div a{line-height:25px;font-size:13px;padding-right:9px;}
+.weiran_cont ul li .txt>div a i{color:#ccc;margin-right:2px;}
+.weiran_cont ul li .txt>div a:hover i{color:#888888;}
+.weiran_cont ul li h4{height:40px;font-weight: normal;color:#888888;border-bottom:1px dotted #ccc;line-height:40px;font-size:12px;padding:0 9px;margin-bottom:10px;}
+
+/*.weiran_footer{height:50px;border-top:1px solid #ccc;background:#fff;padding:9px 0;line-height:26px;*/
+    /*text-align: center;color:#666;position:fixed;bottom:0;left:50%;transform: translateX(-50%);display:none;}*/
+
+

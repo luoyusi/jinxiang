@@ -1,0 +1,1082 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>更多</title>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<style>
+body{background:#f1f1f1;}
+
+.header{width:100%;height:50px;background-color:#000;color:#fff;font-size:20px;font-family: ziti1;
+    position: fixed;opacity: 0.7; z-index:100}
+.header .inner ul{float:left;position:relative;padding-left:105px;}
+.header .inner ul li {display:inline-block;margin-top:0;}
+.header .inner ul li:hover a{color:rgba(255,255,255,0.3);}
+.header .inner>ul>li>a{margin:0 32px;line-height:50px;color:rgba(255,255,255,0.8);font-family: "Microsoft YaHei UI";font-size:14px;transition: all 1s;}
+.header .inner>ul .logo a{margin:0;margin-top:6px;display:inline-block;line-height:0px;}
+.header .inner>ul .logo{position:absolute;left:0px;}
+.header .inner .header-right{float: right;  position: relative;padding-top:9px;}
+.header .inner .header-right span{ position: absolute;left:10px;top:6px;}
+
+.header .inner .header-right ul li{float: left;width:54px;height:32px;margin-left:1px;line-height:32px;text-align: center;background-color:#757575;font-size:15px;position: relative;}
+.header .inner .header-right ul li a{color:#fff;font-size:12px;}
+.header .inner .header-right ul li:hover  a{color:rgba(255,255,255,0.3);}
+.header .inner .header-right ul .yang{background-color:transparent;}
+.header .inner .header-right ul .header-search {width:0px;position:absolute;right:8px;top:-8px;overflow: hidden;z-index:10;transition: all 1s;}
+.header .inner .header-right ul  .yang .ac{display:none;}
+.header .inner .header-right ul .header-search span i{color:rgba(0,0,0,0.5);}
+.header .inner .header-right ul .header-search input{width:160px;height:32px;margin-top:8px;padding-left:30px;line-height:32px;border-radius: 5px;}
+.header .inner .header-right ul .btn-l{border-radius: 5px 0 0 5px;}
+.header .inner .header-right ul .btn-r{border-radius: 0 5px 5px 0;}
+.header .inner .header-right ul a i{font-size:15px;}
+
+
+.main{padding-top:50px;margin-bottom:30px;}
+.main .inner{padding-top:20px;padding-bottom:30px;}
+.main .main-nav{float:left;width:280px;border-right:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;margin-right:17px;background:#fff;}
+.main .main-nav ul{width:100%;}
+.main .main-nav ul li{width:93%;height:22px;line-height:22px;padding:15px 0px 14px 20px;font-size:14px;border-bottom:1px solid #e2e2e2;cursor:pointer;}
+.main .main-nav ul li a{color:#000;}
+.main .main-nav ul li:hover{background:#00c3b6;}
+.main .main-nav ul li:hover a{color:#fff;}
+.bg{background:#00c3b6;}
+.color{color:#fff;}
+.main .main-cont-item{float:left;width:960px;border:1px solid #e2e2e2;border-bottom:2px solid #e8e8e8;border-top:none;border-right:none;background:#fff;display:none;}
+.main .main-cont-item h3{line-height:68px;margin-bottom:5px;font-size:22px;font-weight:normal;border-bottom:1px solid #e5e5e5;padding-left:20px;}
+.main .main-cont-item .main-content{padding:31px 30px 38px 30px;}
+.main .main-cont-item .main-content p{line-height:25px;margin-bottom:20px;font-size:14px;}
+.main .main-cont-item .main-content p span{color:#00c3c4;}
+.main .main-cont-item .main-content .pic{text-align:center;}
+.main .main-cont-item .main-content .pic img{display:block;width:700px;height:300px;margin:0px auto;}
+/*免责声明、关于隐私*/
+.main .main-cont-item .main-content ul{margin-bottom:20px;font-size:14px;width:100%;}
+.main .main-cont-item .main-content ul li{margin-left:27px;list-style:outside;line-height:25px;width:250%;}
+/*网站地图*/
+.main .main-cont-item dl{padding:12px 0px 22px 20px;border-bottom:1px solid #f2f2f2;}
+.main .main-cont-item dl dt{line-height:32px;}
+.main .main-cont-item dl dt a{color:#00c3c4}
+.main .main-cont-item dl dd{float:left;line-height:23px;width:60px;margin-right:8px;text-align:left;margin-left:0px;}
+.main .main-cont-item dl dd a{color:#000;} 
+.main .main-cont-item dl dd a:hover{text-decoration:underline;}
+/*联系我们*/
+.main .main-cont-item .main-contact{padding:17px 20px 30px 20px;color:#333;}
+.main .main-cont-item .main-contact ul{}
+.main .main-cont-item .main-contact ul li{}
+.main .main-cont-item .main-contact ul li h4{font-size:14px;line-height:25px;color:#333;}
+.main .main-cont-item .main-contact ul li p{font-size:14px;line-height:25px;color:#999;}
+.main .main-cont-item .main-contact>ul>li{margin-bottom:20px;}
+.main .main-cont-item .main-contact .texts{color:#333;font-size:12px;line-height:19px;margin-bottom:25px;}
+.main .main-cont-item .main-contact .texts span a{color:#00c3c4;}
+.main .main-cont-item .main-contact .allcomment{color:#333;font-size:14px;line-height:19px;line-height:25px;margin-bottom:16px;/*border-bottom:2px solid #000;*/}
+.main .main-cont-item .main-contact .allcomment span{font-size:30px;color:#00c3c4;}
+.main-contact .ul1 li .floor .floor-one{padding:20px 20px 0px 20px;border-top:1px solid #e5e5e5;}
+.main-contact .ul1 li .floor .floor-one .floor-img{width:44px;height:44px;float:left;border-radius:50%;margin-right:20px;}
+.main-contact .ul1 li .floor .floor-one .floor-img img{width:100%;height:100%;border-radius:50%;}
+.main-contact .ul1 li .floor .floor-one>.floor-cont{float:left;margin-bottom:20px;}
+.main-contact .ul1 li .floor .floor-one .floor-cont .floor-cont-txt{line-height:17px;margin-bottom:8px;}
+.main-contact .ul1 li .floor .floor-one .floor-cont .time{line-height:24px;color:#aa9999;}
+.main-contact .ul1 li .floor .floor-one .floor-cont .time span{color:#00c8cc;margin-right:8px;}
+.main-contact .ul1 li .floor .floor-one .floor-cont .time a{color:#00c8cc;margin-left:8px;}
+/*.main-contact .ul1 li .floor .floor-one .time a:hover{display:block;}*/
+.main-contact .ul1 li .floor .floor-one .number i{float:right;font-style:italic;font-size:20px;color:#999;}
+.floor-one-one{padding:20px 20px 0px 20px;border-top:1px solid #e5e5e5;}
+.floor-one-one>.floor-img{width:44px;height:44px;float:left;border-radius:50%;margin-right:20px;}
+.floor-one-one .floor-img img{width:100%;height:100%;border-radius:50%;}
+.floor-one-one .floor-cont{/*float:right;*/}
+.floor-one-one .floor-cont .floor-cont-txt{line-height:17px;margin-bottom:8px;}
+.floor-one-one>.floor-cont>.time{line-height:24px;color:#aa9999;margin-bottom:20px;}
+.floor-one-one .floor-cont .time .mark{float:left;width:51px;height:18px;line-height:18px;background:#999;border-radius:2px;color:#fff;text-align:center;margin-right:8px;margin-top:2px;}
+.floor-one-one .floor-cont .time span{color:#00c8cc;margin-right:8px;}
+.floor-one-one .floor-cont .time a{color:#00c8cc;margin-left:8px;}
+.floor-one-one .floor-cont>ul li{padding:20px;border-top:1px solid #e5e5e5;padding-right:450px;}
+.floor-one-one .floor-cont>ul li .floor-img{width:44px;height:44px;float:left;border-radius:50%;margin-right:20px;}
+.floor-one-one .floor-cont>ul li .floor-img img{width:100%;height:100%;border-radius:50%;}
+.floor-one-one .floor-cont>ul li .floor-cont{/*float:left;*/}
+.floor-one-one .floor-cont>ul li .floor-cont .floor-cont-txt{line-height:17px;margin-bottom:8px;}
+.floor-one-one .floor-cont>ul li .floor-cont .time{line-height:24px;color:#aa9999;}
+.floor-one-one .floor-cont>ul li .floor-cont .time .mark{float:left;width:51px;height:18px;line-height:18px;background:#999;border-radius:2px;color:#fff;text-align:center;margin-right:8px}
+.floor-one-one .floor-cont>ul li .floor-cont .time span{color:#00c8cc;margin-right:8px;}
+.floor-one-one .floor-cont>ul li .floor-cont .time a{color:#00c8cc;margin-left:8px;}
+.floor-one-four
+.floor-one-one .floor-one-four{padding:20px 20px 0px 20px;border-top:1px solid #e5e5e5;}
+.floor-one-four .floor-img{width:44px;height:44px;float:left;border-radius:50%;margin-right:20px;width:200%;padding-top:20px;}
+.floor-one-four .floor-img img{width:100%;height:100%;border-radius:50%;}
+.floor-one-four .floor-cont{/*float:left;*/margin-top:20px;}
+.floor-one-four .floor-cont .floor-cont-txt{line-height:17px;margin-bottom:8px;width:210%;padding-top:20px;border-top:1px solid #e5e5e5;}
+.floor-one-four>.floor-cont>.time{line-height:24px;color:#aa9999;margin-bottom:-15px;}
+.floor-one-four .floor-cont .time .mark{float:left;width:51px;height:18px;line-height:18px;background:#999;border-radius:2px;color:#fff;text-align:center;margin-right:8px}
+.floor-one-four .floor-cont .time span{color:#00c8cc;margin-right:8px;}
+.ul1 li .floors{}
+.ul1 li .floors {padding:20px 20px 0px 20px;border-top:1px solid #e5e5e5;}
+.ul1 li .floors .floor-img{width:44px;height:44px;float:left;border-radius:50%;margin-right:20px;}
+.ul1 li .floors .floor-img img{width:100%;height:100%;border-radius:50%;}
+.ul1 li .floors .floor-cont{float:left;width:89%;}
+.ul1 li .floors .floor-cont .floor-cont-txt{line-height:17px;margin-bottom:8px;}
+.ul1 li .floors .floor-cont .floor-cont-txt p{float:left;}
+.ul1 li .floors .floor-cont .time{line-height:24px;color:#aa9999;}
+.ul1 li .floors .floor-cont .time span{color:#00c8cc;margin-right:8px;}
+.ul1 li .floors .floor-cont .time a{color:#00c8cc;margin-left:8px;}
+.ul1 li .floors .number i{float:right;font-style:italic;font-size:20px;color:#999;}
+
+.ul1 li .floors-one {padding:20px 20px 0px 20px;border-top:1px solid #e5e5e5;margin-top:20px;}
+.ul1 li .floors-one .floor-img{width:44px;height:44px;float:left;border-radius:50%;margin-right:20px;}
+.ul1 li .floors-one .floor-img img{width:100%;height:100%;border-radius:50%;}
+.ul1 li .floors-one .floor-cont{float:left;width:89%;}
+.ul1 li .floors-one .floor-cont .floor-cont-txt{line-height:17px;margin-bottom:8px;}
+.ul1 li .floors-one .floor-cont .floor-cont-txt p{float:left;margin-right:13px;}
+.ul1 li .floors-one .floor-cont .time{line-height:24px;color:#aa9999;}
+.ul1 li .floors-one .floor-cont .time .floors-mark{float:left;width:51px;height:18px;line-height:18px;background:#999;border-radius:2px;color:#fff;text-align:center;margin-right:8px}
+.ul1 li .floors-one .floor-cont .time span{color:#00c8cc;margin-right:8px;}
+.ul1 li .floors-one .floor-cont .time a{color:#00c8cc;margin-left:8px;}
+
+.ul1 li .floors-two {padding:20px 20px 0px 20px;border-top:1px solid #e5e5e5;margin-top:20px;}
+.ul1 li .floors-two .floor-img{width:44px;height:44px;float:left;border-radius:50%;margin-right:20px;}
+.ul1 li .floors-two .floor-img img{width:100%;height:100%;border-radius:50%;}
+.ul1 li .floors-two .floor-cont{float:left;width:89%;}
+.ul1 li .floors-two .floor-cont .floor-cont-txt{line-height:17px;margin-bottom:8px;}
+.ul1 li .floors-two .floor-cont .floor-cont-txt p{float:left;}
+.ul1 li .floors-two .floor-cont .time{line-height:24px;color:#aa9999;}
+.ul1 li .floors-two .floor-cont .time span{color:#00c8cc;margin-right:8px;}
+.ul1 li .floors-two .floor-cont .time a{color:#00c8cc;margin-left:8px;}
+.pages{margin-top:20px;border-top:1px solid #e5e5e5;}
+.pages .pages-one{width:300px;margin:0px auto;}
+.pages .pages-one a{display:inline-block;width:36px;height:36px;text-align:center;line-height:36px;border:1px solid #e5e5e5;margin-right:3px;margin-top:30px;margin-bottom:30px;border-radius:5px;color:#999;}
+.pages .pages-one a span{font-size:18px;font-weight:bold;}
+.pages .pages-one strong{font-weight:normal;margin:0px 10px;}
+.pages .pages-one a:hover{background:#00c3b6;color:#fff;transition:all 0.5s;}
+/*友情链接*/
+.main-contact .ul2{font-size:14px;color:#999;line-height:25px;}
+.main-contact .ul2 span{color:#333;}
+.main-contact .ul3{font-size:14px;color:#999;line-height:25px;}
+.main-contact .ul3 span{color:#333;}
+.main-contact .sort{border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;margin-top:20px;margin-bottom:50px;}
+.main-contact .sort ul{padding-top:16px;padding-bottom:32px;}
+.main-contact .sort ul li{float:left;width:183px;padding-bottom:30px;}
+.main-contact .sort ul li span{float:left;margin-right:10px;}
+.main-contact .sort ul li span img{width:16px;height:16px;}
+.main-contact .sort ul li a{color:#777;}
+.main-contact .sort .tea{line-height:17px;margin-bottom:14px;text-align:right;margin-right:80px;}
+.main-contact .sort .tea a{color:#777;}
+
+.ul1 li .floors-link {padding:20px;border-top:1px solid #e5e5e5;}
+.ul1 li .floors-link .floor-img{width:44px;height:44px;float:left;border-radius:50%;margin-right:20px;}
+.ul1 li .floors-link .floor-img img{width:100%;height:100%;border-radius:50%;}
+.ul1 li .floors-link .floor-cont{float:left;width:89%;}
+.ul1 li .floors-link .floor-cont .floor-cont-txt{line-height:17px;margin-bottom:8px;}
+.ul1 li .floors-link .floor-cont .floor-cont-txt a{text-decoration:underline;color:#666;display:inline-block;}
+.ul1 li .floors-link .floor-cont .floor-cont-txt p{float:left;}
+.ul1 li .floors-link .floor-cont .time{line-height:24px;color:#aa9999;}
+.ul1 li .floors-link .floor-cont .time span{color:#00c8cc;margin-right:8px;}
+.ul1 li .floors-link .floor-cont .time a{color:#00c8cc;margin-left:8px;}
+.ul1 li .floors-link .number i{float:right;font-style:italic;font-size:20px;color:#999;}
+
+.ul1 li .floors-twice{padding:20px 20px 0px 20px;border-top:1px solid #e5e5e5;margin-top:20px;}
+.ul1 li .floors-twice .floor-img{float:left;margin-right:20px;}
+.ul1 li .floors-twice .floor-con{line-height:26px;}
+.ul1 li .floors-twice .floor-con .floor-cont-txt{line-height:26px;}
+.ul1 li .floors-twice .floor-con .time{}
+.ul1 li .floors-twice .floor-con .time span{color:#00c3b6;}
+.ul1 li .floors-twice .floor-con .time a{color:#00c3b6;}
+
+
+.bottom{ background:#222; height:160px; width:100%; margin-top:40px;color:rgba(255,255,255,0.3)}
+.bottom .inner{border-bottom:1px solid #313131; height:159px; z-index:50;}
+.bottom .wei{ width:40%; padding-right:70px; float:left; }
+.bottom .wei h3{ line-height:36px; font-size:16px; color:#b2b2b2;} 
+.bottom .wei p{ line-height:20px; font:14px;}
+.bottom dl{ float:left; width:10%; padding:0 0px 20px 0;}
+.bottom dl a{ transition:all 0.6s; color: #999; }
+.bottom dl dt{ font-size:14px; color:#b2b2b2; line-height:35px; }
+.bottom dl dd{ line-height:21px; font:12px;color:red}
+.bottom dl a:hover{ color:#b2b2b2;text-decoration:underline; }
+.bottom .lxfs{ width:24%; float:left;}
+.bottom .lxfs h3{ line-height:35px; color:#b2b2b2; font-size:16px; }
+.bottom .lxfs p{ line-height:21px; font:14px; margin-bottom:9px;}
+.bottom .lxfs .text{ width:53%; height:26px; border:1px solid #323232; margin-bottom:20px; background:#1b1b1b; color:rgba(255,255,255,0.9); margin-right:6px; }
+.bottom .lxfs .sub{ width:18%; height:28px; background:#00a398; border-radius:5px; margin-bottom:20px; color:#b2b2b2; }
+.bottom .lxfs .sub:hover{ color:#fff; }
+.bottom .lxfs li{ float:left;}
+.bottom .lxfs li i{width:30px; height:30px;  background:#1b1b1b; color:#b2b2b2; text-align:center; line-height:30px; border-radius:4px; font-size:16px; margin-right:8px; transition:all 0.7s; }
+.bottom .lxfs li:nth-child(1) i:hover{ background:#79ac21; color:#fff;}
+.bottom .lxfs li:nth-child(2) i:hover{ background:#ff664e; color:#fff;}
+.bottom .lxfs li:nth-child(3) i:hover{ background:#e05fef; color:#fff;}
+.bottom .lxfs li:nth-child(4) i:hover{ background:#00c3f4; color:#fff;}
+.bottom .lxfs li:nth-child(5) i:hover{ background:#f39c12; color:#fff;} 
+
+
+.footer{ height:40px; background:#222; width:100%; padding-top:18px; }
+.footer p{ font-size:14px;font-size: 12px;color:#999;}
+.footer p span{ color:#00c3b6;}
+
+
+@media  screen and (max-width:1470px){
+	.inner{width:97%}
+	.main .inner ul{width:95%;}
+	.main .inner .main-nav{width:22%;float:left;}
+	.main .inner .main-nav ul li{width:96%;}
+	.main .inner .main-cont{width:75%;float:left;}	
+	.main .inner .main-cont-item{width:97%;}	
+	.main .inner .main-cont-item .main-content .pic{width:99%;}	
+	.main .inner .main-cont-item .main-content .pic img{width:100%;}
+	.main .inner .main-cont-item .main-content ul li{width:60%;}
+}
+@media screen and (max-width:1025px){
+	.main .inner .main-nav{width:97%;}
+	.main .inner .main-nav ul{width:100%;}
+	.main .inner .main-nav ul li{width:98%;}
+	.main .inner .main-cont{width:100%;}
+
+}
+@media screen and (max-width:780px){
+	
+
+}
+
+</style>
+<script type="text/javascript" src="js/选项卡.js"></script>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/index_header.js"></script>
+<script>
+$(function(){
+	var list=$(".lists");
+	var content=$(".main-cont-item");
+	//alert(content.length)
+	list.click(function(){
+		content.hide();
+		content.eq($(this).index()).show();
+	})
+	
+	header();
+	
+	
+
+})
+
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+        <ul class="inner">
+            <ul id="logo">
+                <li class="logo"><a href="index.html"><img src="imgs/logo.png"></a> </li>
+                <li><a href="article.html">文章</a></li>
+                <li><a href="Appreciate.html">欣赏</a></li>
+                <li><a href="sucai.html">素材</a></li>
+                <li><a href="exchange.html">兑换</a></li>
+                <li><a href="activity.html">活动</a></li>
+                <li><a href="weiran.html">社区</a></li>
+                <li class="more">
+                    <a href="more.html">更多</a>
+                </li>
+            </ul>
+            <div class="header-right">
+                <ul>
+                    <li class="yang">
+                        <a id="search_btn" href="#"><i class="fa fa-search"></i></a>
+                        <div class="header-search">
+                            <span><i class="fa fa-search"></i></span>
+                            <input type="text" placeholder="输入关键字搜索…"/>
+                        </div>
+
+                    </li>
+                    <li class="btn-l"><a href="">登录</a></li>
+                    <li class="btn-r"><a href="">注册</a></li>
+
+                </ul>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+<div class="main">
+	<div class="inner">
+    	<div class="main-nav">
+        	<ul>
+            	<li class="lists"><a href="javascript:;">关于镜像</a></li>
+                <li class="lists"><a href="javascript:;">免责声明</a></li>
+                <li class="lists"><a href="javascript:;">关于隐私</a></li>
+                <li class="lists"><a href="javascript:;">网站地图</a></li>
+                <li class="lists"><a href="javascript:;">留言联系</a></li>
+                <li class="lists"><a href="javascript:;">友情链接</a></li>
+            </ul>
+        </div>
+        <div class="main-cont">
+        	<div class="main-cont-item" style="display:block">
+            	<h3>关于镜像</h3>
+                <div class="main-content">
+                	<p><span>《镜像》</span>：推崇以用户为中心的理念，致力于为摄影爱好者提供一个良好的学习交流平台。</p>
+                    <p>拥有国内外最新的摄影潮流趋势、独特而美的创意、新颖而前卫思维意识、极致酷炫的人机交互体验，更有严谨而通俗的技术教程！将成为摄影者不可或缺的好帮手。</p>
+                    <p><span>《镜像-灵感》</span>：是镜像旗下的图片分享社区，旨在寻找摄影灵感，以记录美丽、分享美好的创意理念，分享高品质创意、艺术、摄影、时尚、插画、摄影、唯美类精美图片。</p>
+                    <p>镜像感谢朋友们的支持与关注，镜像有你而精彩，我们愿与你一起成长，一起变得更加优秀！</p>
+                    <div class="pic"><img src="images/haha_01.jpg"/></div>
+                </div>
+            </div>
+            <div class="main-cont-item">
+            	<h3>免责声明</h3>
+                <div class="main-content">
+                	<p>1、镜像(下文简称本站)提供的所有内容仅供学习、交流和分享用途，只供参考。本站资源禁止并谢绝未经本站许可的使用，如若欲转载，请署名以及注明出处，请务必以文字链接的形式标明或保留文章原始出处和作者的信息。本站(原创)文章、资源、图片等所有内容，一经转载，即表示您已经接受上述声明！需自行承担一切风险与责任；</p>
+                    <p>2、关于本站的所有留言评论与转载、引用文纯属文字原作者个人观点，与本站观点及立场无关；浏览者在本站发表信息时需要遵守中国现行相应法律，不得发布违法信息；</p>
+                    <p>3、在本站的网页上有时候可能会出现有为浏览者提供方便的第三方链接(包括链接引用)或广告出现，链接或广告内容并不代表本站观点，若点击即可能将离开本站进入第三方站点，而本站将不为第三方站点带来的任何风险负</p>
+                    <p>4、关于转载内容，本站中有一部分来源于网络和媒体的内容(文章、源码、资源附件等)将通过好文转载、出于个人整理收藏，会员分享，信息普及目的或引用点评的形式在原作者默许(未注明、放弃、佚名、部分保留版权等)或注明允许通过相关网络版权协议的情况下进行转载或引用点评，并都会在文章注明出处或作者及相关信息、链接；因有些转文内容来自搜索引擎，出处可能有很多，本站不便确定查证，可能会将这类文章转载来源归类于来源于网络，并尽可能的标出参考来源、出处，本站尊重原作者的成果，若本站内容侵犯了您的合法权益时或者对转载内容有疑义的内容原作者，请书面反馈并提供确切的个人身份证明与详细资料信息在第一时间以邮件（或电联）的形式进行联系沟通；</p>
+                    <p>5、本站不完全保证所有内容的完整性、准确性和及时性；本站的浏览如果出现由于Internet线路、恶意群发、黑客入侵或其他不可抗力等原因直接给您造成了麻烦，本站对您或任何第三方均不承担任何责任。</p>
+                    <p>6、用户会员在本站发表、分享的内容，仅表明其个人的立场和观点，并不代表本站的立场和观点。作为内容的发表或分享者，需自行对所发表或分享的内容负责，因所发表或分享的内容引发的一切纠纷、损失，由该内容的发表或分享者承担全部直接或间接（连带）法律责任，本站不承担任何法律责任。本站用户会员以各种方式使用服务和数据（包括但不限于发表、分享、转载、浏览）的过程中，不得以任何方式利用本站直接或间接从事违反中国法律法规、以及社会公德的行为，且用户会员应当恪守下述承诺：</p>
+                    <ul>
+                    	<li>发布或分享提供的内容符合中国法律法规、社会公德；</li>
+                        <li>发布或分享提供的内容不得侵害正当权利人之权利；</li>
+                        <li>不得干扰、损害和侵犯镜像网的各种合法权利与利益；</li>
+                        <li>遵守镜像网以及与之相关的网络服务的协议、指导原则、管理细则等。</li>
+                    </ul>
+                    <p>本站有权对违反上述承诺的内容予以删除。</p>
+                </div>
+            </div>
+            <div class="main-cont-item">
+            	<h3>关于隐私</h3>
+                <div class="main-content">
+                    <p>1、当您在镜像网（以下简称本站）进行注册登录、第三方绑定帐号、购买商品、发布评论时，在您的同意以及告知的前提下，我们将会保存相关的个人资料数据（如：电子邮箱、Cookie信息、第三方网站授权信息、支付授权信息以及IP地址等等）到本站；您在本站所提供的信息都是基于自愿原则，您在任何时候都可以拒绝提供这些信息。</p>
+                    <p>2、在未经访问者授权下，本站绝对不会将访问者的任何隐私信息透露、展示给第三方。以下情况除外：</p>
+                    <ul>
+                        <li>根据国家执法单位要求、命令向相关单位提供相关个人资料；</li>
+                        <li>由于访问者的个人原因导致密码泄漏或告知他人共享注册帐号时，由此导致的个人资料泄漏；</li>
+                        <li>由于黑客攻击、计算机病毒侵入或发作、因政府管制而造成的暂时性关闭等影响网络正常经营之不可抗力而造成的个人资料泄露、丢失、被盗用或被窜改等；</li>
+                    </ul>
+                 </div>
+            </div>
+            <div class="main-cont-item">
+            	<h3>网站地图</h3>
+                	<dl>
+                    	<dt><a href="javascript:;">用户体验</a></dt>
+                        <dd><a href="javascript:;">交互摄影</a></dd>
+                        <dd><a href="javascript:;">前端开发</a></dd>
+                        <dd><a href="javascript:;">用户研究</a></dd>
+                        <dd><a href="javascript:;">视觉摄影</a></dd>
+                        <div class="clear"></div>
+                    </dl>
+                    
+                    <dl>
+                    	<dt><a href="javascript:;">素材下载</a></dt>
+                        <dd><a href="javascript:;">3D素材</a></dd>
+                        <dd><a href="javascript:;">PS资源</a></dd>
+                        <dd><a href="javascript:;">前端代码</a></dd>
+                        <dd><a href="javascript:;">图标素材</a></dd>
+                        <dd><a href="javascript:;">字体资源</a></dd>
+                        <dd><a href="javascript:;">矢量资源</a></dd>
+                        <dd><a href="javascript:;">网页模版</a></dd>
+                        <dd><a href="javascript:;">高清图片</a></dd>
+                        <div class="clear"></div>
+                    </dl>
+                    <dl>
+                    	<dt><a href="javascript:;">摄影欣赏</a></dt>
+                        <dd><a href="javascript:;">3D艺术</a></dd>
+                        <dd><a href="javascript:;">交互摄影</a></dd>
+                        <dd><a href="javascript:;">工业摄影</a></dd>
+                        <dd><a href="javascript:;">平面摄影</a></dd>
+                        <dd><a href="javascript:;">摄影艺术</a></dd>
+                        <dd><a href="javascript:;">空间摄影</a></dd>
+                        <dd><a href="javascript:;">绘画艺术</a></dd>
+                        <dd><a href="javascript:;">酷站欣赏</a></dd>
+                        <div class="clear"></div>
+                    </dl>
+                    <dl>
+                    	<dt><a href="javascript:;">商店</a></dt>
+                        <dd><a href="javascript:;">主题</a></dd>
+                        <dd><a href="javascript:;">其他</a></dd>
+                        <div class="clear"></div>
+                    </dl>
+                    <dl>
+                    	<dt><a href="javascript:;">专题活动</a></dt>
+                        <dd><a href="javascript:;">赛事</a></dd>
+                        <div class="clear"></div>
+                    </dl>
+                    <dl>
+                    	<dt><a href="javascript:;">维然</a></dt>
+                        <dd><a href="javascript:;">动漫</a></dd>
+                        <dd><a href="javascript:;">动画</a></dd>
+                        <dd><a href="javascript:;">名人</a></dd>
+                        <dd><a href="javascript:;">唯美</a></dd>
+                        <dd><a href="javascript:;">婚纱</a></dd>
+                        <dd><a href="javascript:;">家居</a></dd>
+                        <dd><a href="javascript:;">建筑</a></dd>
+                        <dd><a href="javascript:;">插画</a></dd>
+                        <dd><a href="javascript:;">摄影</a></dd>
+                        <dd><a href="javascript:;">数码</a></dd>
+                        <dd><a href="javascript:;">旅游</a></dd>
+                        <dd><a href="javascript:;">时尚</a></dd>
+                        <dd><a href="javascript:;">服饰</a></dd>
+                        <dd><a href="javascript:;">汽车</a></dd>
+                        <dd><a href="javascript:;">游戏</a></dd>
+                        <dd><a href="javascript:;">童真</a></dd>
+                        <dd><a href="javascript:;">美女</a></dd>
+                        <dd><a href="javascript:;">美妆</a></dd>
+                        <dd><a href="javascript:;">美食</a></dd>
+                        <dd><a href="javascript:;">艺术</a></dd>
+                        <dd><a href="javascript:;">萌宠</a></dd>
+                        <dd><a href="javascript:;">摄影</a></dd>
+                        <dd><a href="javascript:;">趣味</a></dd>
+                        <div class="clear"></div>
+                    </dl>
+                    <dl>
+                    	<dt><a href="javascript:;">标签</a></dt>
+                        <dd><a href="javascript:;">3D</a></dd>
+                        <dd><a href="javascript:;">APP</a></dd>
+                        <dd><a href="javascript:;">css</a></dd>
+                        <dd><a href="javascript:;">HTML5</a></dd>
+                        <dd><a href="javascript:;">javascript</a></dd>
+                        <dd><a href="javascript:;">jQuery</a></dd>
+                        <dd><a href="javascript:;">Logo</a></dd>
+                        <dd><a href="javascript:;">Photoshop</a></dd>
+                        <dd><a href="javascript:;">UI</a></dd>
+                        <dd><a href="javascript:;">VI</a></dd>
+                        <dd><a href="javascript:;">web</a></dd>
+                        <dd><a href="javascript:;">Wordpress</a></dd>
+                        <dd><a href="javascript:;">优化</a></dd>
+                        <dd><a href="javascript:;">创意</a></dd>
+                        <dd><a href="javascript:;">动画</a></dd>
+                        <dd><a href="javascript:;">包装摄影</a></dd>
+                        <dd><a href="javascript:;">唯美</a></dd>
+                        <dd><a href="javascript:;">图标字体</a></dd>
+                        <dd><a href="javascript:;">图标摄影</a></dd>
+                        <dd><a href="javascript:;">奇思妙想</a></dd>
+                        <dd><a href="javascript:;">平面摄影</a></dd>
+                        <dd><a href="javascript:;">扁平化</a></dd>
+                        <dd><a href="javascript:;">手绘</a></dd>
+                        <dd><a href="javascript:;">技巧</a></dd>
+                        <dd><a href="javascript:;">插画</a></dd>
+                        <dd><a href="javascript:;">摄影</a></dd>
+                        <dd><a href="javascript:;">旅游</a></dd>
+                        <dd><a href="javascript:;">时尚</a></dd>
+                        <dd><a href="javascript:;">海报</a></dd>
+                        <dd><a href="javascript:;">清新</a></dd>
+                        <dd><a href="javascript:;">用户研究</a></dd>
+                        <dd><a href="javascript:;">界面摄影</a></dd>
+                        <dd><a href="javascript:;">移动前端</a></dd>
+                        <dd><a href="javascript:;">网站</a></dd>
+                        <dd><a href="javascript:;">网页图标</a></dd>
+                        <dd><a href="javascript:;">网页摄影</a></dd>
+                        <dd><a href="javascript:;">背景创意</a></dd>
+                        <dd><a href="javascript:;">自定义</a></dd>
+                        <dd><a href="javascript:;">艺术</a></dd>
+                        <dd><a href="javascript:;">摄影</a></dd>
+                        <dd><a href="javascript:;">摄影风格</a></dd>
+                        <dd><a href="javascript:;">趣味</a></dd>
+                        <dd><a href="javascript:;">进度条</a></dd>
+                        <div class="clear"></div>
+                    </dl>  
+            </div>            
+            <div class="main-cont-item">
+            	<h3>留言联系</h3>
+                <div class="main-contact">
+                	<ul>
+                    	<li>
+                        	<h4>建议反馈</h4>
+                            <p>邮箱：javin@jiawin.com</p>
+                            <p>格式：【建议咨询】xxxxx（标题）xxxxx</p>
+                        </li>
+                        <li>
+                        	<h4>广告合作</h4>
+                            <p>邮箱：javin@jiawin.com</p>
+                            <p>格式：【广告合作】xxxxx（标题）xxxxx</p>
+                        </li>
+                        <li>
+                        	<h4>WordPress服务（暂不支持）</h4>
+                            <p>邮箱：javin@jiawin.com</p>
+                            <p>格式：【WP服务】xxxxx（标题）xxxxx</p>
+                        </li>
+                    </ul>
+                    <div class="texts">登录之后才能评论，请点击 <span><a href="#">登录</a></span>。</div>
+                    <div class="allcomment">全部评论 / <span>205</span></div>
+                    <ul class="ul1">
+                    	<li>
+                        	<div class="floor">
+                            	<div class="floor-one">
+                                	<div class="floor-img"><a href="#"><img src="images/e52618a8a7e2e6f164daa06d7ff95671.jpg"/></a></div>
+                                	<div class="floor-cont">
+                                    	<div class="floor-cont-txt">给你充值了，149元，要买你的主题 ，收到消息请与我联系，谢谢，帐号：blook</div>
+                                        <div class="time"><span>blook</span>2012-10-19<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>20</i></div>
+                                    <div class="clear"></div>
+                                    <div class="floor-one-one">
+                                    	<div class="floor-img"><a href="#"><img src="images/0914195143b0c2b1af6e90f-100x100.png"/></a></div>
+                                		<div class="floor-cont">
+                                            <div class="floor-cont-txt">感谢支持，请确认收货后，将会自动充值到您的镜币账户。镜币可直接兑换主题。祝新年快乐、大吉大利！</div>
+                                            <div class="time"><div class="mark">1号杂工</div><span>Javin zhong</span>2012-10-19<a href="#">登录以回复</a></div>
+                                            <div class="clear"></div>
+                                            <ul>
+                                                <li>
+                                                    <div class="floor-img"><a href="#"><img src="images/e52618a8a7e2e6f164daa06d7ff95671.jpg"/></a></div>
+                                                    <div class="floor-cont">
+                                                        <div class="floor-cont-txt">已经确认收货，但还是提示镜币不足呢。。。</div>
+                                                        <div class="time"><span>blook</span>2012-10-19<a href="#">登录以回复</a></div>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </li>
+                                                <li>
+                                                    <div class="floor-img"><a href="#"><img src="images/e52618a8a7e2e6f164daa06d7ff95671.jpg"/></a></div>
+                                                    <div class="floor-cont">
+                                                        <div class="floor-cont-txt">提示我已经兑换过一次，但从哪下载呢？</div>
+                                                        <div class="time"><span>blook</span>2012-10-19<a href="#">登录以回复</a></div>
+                                                        <div class="floor-one-four">
+                                                            <div class="floor-img"><a href="#"><img src="images/0914195143b0c2b1af6e90f-100x100.png"/></a></div>
+                                                            <div class="floor-cont">
+                                                                <div class="floor-cont-txt">感谢支持，请确认收货后，将会自动充值到您的镜币账户。镜币可直接兑换主题。祝新年快乐、大吉大利！</div>
+                                                                <div class="time"><div class="mark">1号杂工</div><span>Javin zhong</span>2012-10-19<a href="#">登录以回复</a></div>
+                                                            </div>
+                                                        </div>
+                                                    <div class="clear"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="clear"></div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/30213535cd2349c43bc9d2a-100x100.jpg"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt"><a href="#"><img src="images/icon_mrgreen.gif"/></a></div>
+                                    <div class="time"><span>若水</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>19</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/d41d8cd98f00b204e9800998ecf8427e.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">站长现在更新的速度很慢啊，期待你的更多精彩文章啊~~</div>
+                                    <div class="time"><span>雙魚男灬魏子灬 </span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>18</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/b658eb7430432d601795878055ea0d3a.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">楼主，有不有HTML5 的静态页面dome</div>
+                                    <div class="time"><span>yinge</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>17</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/f003e8119676cf2be4f7ee2ab55fa5ef.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">首先，我觉得站点体验非常好，学习的榜样，想请教一个问题，这个是个人网站还是企业网站，如果是个人的话，按理说限制的比较紧，许多东西都不允许做，站长指点下，因为我也想做个个人的网站</div>
+                                    <div class="time"><span>sunlovefly</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>16</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/6627e4c8059b054b57c9f083c47cebd1.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">您好，镜币充值后为什么不能直接到帐，希望尽快处理。</div>
+                                    <div class="time"><span>changxuenet</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>15</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/4b03059552c4a27f95e69d2fb83be634.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">漏洞：留言列表分页没有第二页。分页偏移量算法问题</div>
+                                    <div class="time"><span>feifboni</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>14</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/635e699f95f7b2ff62a74d847d229a35.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">你好，我有个高水准的建站项目，急寻高手合作，不知有意否？请联系鄙人QQ：8130313.</div>
+                                    <div class="time"><span>Alei</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>13</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/ef9a009083b96d3eaf52ae88391f6e5e.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">这个后台很酷哦！</div>
+                                    <div class="time"><span>zhangzhangfb</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>12</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/ef9a009083b96d3eaf52ae88391f6e5e.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">你这个主题后台有用插件吗？</div>
+                                    <div class="time"><span>zhangzhangfb</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>11</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/100_002.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">漏洞：可删除其他人上传的图片</div>
+                                    <div class="time"><span>SkyWay</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>10</i></div>
+                                <div class="clear"></div>
+                                <div class="floors-one">
+                                	<div class="floor-img"><a href="#"><img src="images/0914195143b0c2b1af6e90f-100x100.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">感谢反馈，已经修复。</div>
+                                        <div class="time"><div class="floors-mark">1号杂工</div><span>Javin</span>2012-10-19<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </li> 
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/100_004.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">我想问下你这个个人中心是怎么做的？？</div>
+                                    <div class="time"><span>じ★ve染zんí啨偆♀</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>9</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/15123006c0bd2482ea927fd-100x100.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">想问一下 这个手机版和电脑版的切换时如何做到的。</div>
+                                    <div class="time"><span>xiaoming</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>8</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/100_003.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">网站模板出售不大师 :grin:</div>
+                                    <div class="time"><span>Luke</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>7</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/a7d627b8a047421ee11f8da8a12e276d.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">大部分都是版主一个人搞的啊。。很厉害啊。~！！！</div>
+                                    <div class="time"><span>magicggyy</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>6</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/b726b0b862fa3a5ed205f2bb52a0482a.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">网站做得超级棒~</div>
+                                    <div class="time"><span>尘埃</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>5</i></div>
+                                <div class="clear"></div>
+                                <div class="floors-one">
+                                	<div class="floor-img"><a href="#"><img src="images/0914195143b0c2b1af6e90f-100x100.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">感谢支持，可以使用CSS3 ::selection 选择器来实现。</div>
+                                        <div class="time"><div class="floors-mark">1号杂工</div><span>Javin</span>2012-10-19<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="floors-two">
+                                        <div class="floor-img"><a href="#"><img src="images/b726b0b862fa3a5ed205f2bb52a0482a.png"/></a></div>
+                                        <div class="floor-cont">
+                                            <div class="floor-cont-txt">神速回复，感谢指导Orz</div>
+                                            <div class="time"><span>尘埃</span>2012-10-19<a href="#">登录以回复</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/30213535cd2349c43bc9d2a-100x100.jpg"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">用户中心可以设置头像</div>
+                                    <div class="time"><span>若水</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>4</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/54034305b32b36b9607dc209b6bfa92c.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt"><p>头像没地方修改呀，</p><a><img src="images/icon_arrow.gif"/></a></div>
+                                    <div class="time"><span>starlong</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>3</i></div>
+                                <div class="clear"></div>
+                                <div class="floors-one">
+                                	<div class="floor-img"><a href="#"><img src="images/30213535cd2349c43bc9d2a-100x100.jpg"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt"><p>用户中心可以设置。</p><span><img src="images/icon_biggrin.gif"/></span></div>
+                                        <div class="time"><span>若水</span>2012-10-19<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="floors">
+                                <div class="floor-img"><a href="#"><img src="images/100.png"/></a></div>
+                                <div class="floor-cont">
+                                    <div class="floor-cont-txt">冒个泡</div>
+                                    <div class="time"><span>qq38dd80726a</span>2012-10-19<a href="#">登录以回复</a></div>
+                                </div>
+                                <div class="number"><i>2</i></div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pages">
+                    	<div class="pages-one">
+                        	<a href="#"><span><</span></a>
+                            <a href="#">1</a>
+                            <strong>…</strong>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="main-cont-item">
+            	<h3>友情链接</h3>
+                <div class="main-contact">
+                	<div class="ul2"><span>链接要求：</span>行业相关性网站优先考虑，有良好的用户体验和口碑</div>
+                    <div class="ul3"><span>链接申请：</span>javin@jiawin.com，申请时注明【友链】</div>
+                    <div class="sort">
+                    	<ul>
+                        	<li><a href="#"><span><img src="images/favicon_008.ico"/></span>wordpress 主题</a></li>
+                            <li><a href="#"><span><img src="images/favicon_003.ico"/></span>倡萌的自留地</a></li>
+                            <li><a href="#"><span><img src="images/favicon_009.ico"/></span>前端观察</a></li>
+                            <li><a href="#">大发贱志 大发贱志</a></li>
+                            <li><a href="#"><span><img src="images/favicon_007.ico"/></span>程序员客栈</a></li>
+                        </ul>
+                        <div class="tea"><a href="#">老赵茶馆 老赵茶馆</a></div>
+                        <ul>
+                        	<li><a href="#">腾讯 AlloyTeam 腾讯 All…</a></li>
+                            <li><a href="#"><span><img src="images/favicon.ico"/></span>腾讯CDC</a></li>
+                            <li><a href="#">芒果小站 芒果小站</a></li>
+                            <li><a href="#"><span><img src="images/favicon_006.ico"/></span>摄影达人</a></li>
+                            <li><a href="#">飞鱼的声纳 飞鱼的声纳</a></li>
+                        </ul>
+                    </div>
+                    <div class="texts">登录之后才能评论，请点击 <span><a href="#">登录</a></span>。</div>
+                    <div class="allcomment">全部评论 / <span>205</span></div>
+                    <ul class="ul1">
+                    	<div class="floor">
+                        	<li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/10077.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">非常好的网站，支持。<br/><a href="#">http://www.bidishi.com</a></div>
+                                        <div class="time"><span>Sniper007</span>1周前<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>20</i></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/10088.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt"><a href="#">http://www.ijisen.com/</a><br/>呵呵 网站很漂亮 特别是响应式 值得 学习</div>
+                                        <div class="time"><span>(·̮̃·̃) ·幵ィ心</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>19</i></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/100.jpg"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">友链申请:<br/>aspnetjia:<a href="#">http://www.aspnetjia.com/</a><br/>谢谢</div>
+                                        <div class="time"><span>.</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>18</i></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/100_002.jpg"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">在线按钮样式生成器:<a href="#">http://buttoncssgenerator.com</a></div>
+                                        <div class="time"><span>miller</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>17</i></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/370992f613847cc941c762a0fe8f6f34.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">申请【友链】：<br/>微美摄影：www.vemev.com</div>
+                                        <div class="time"><span>mlgb</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>16</i></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/15133505768256463974952-100x100.jpg"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt"><a><img src="images/icon_arrow.gif"/></a><a><img src="images/icon_biggrin.gif"/></a><a><img src="images/icon_exclaim.gif"/></a><a><img src="images/icon_question.gif"/></a><a><img src="images/icon_cool.gif"/></a><a><img src="images/icon_rolleyes.gif"/></a><a><img src="images/icon_surprised.gif"/></a><a><img src="images/icon_evil.gif"/></a><a><img src="images/icon_evil.gif"/></a><a><img src="images/icon_razz.gif"/></a><a><img src="images/icon_mrgreen.gif"/></a>哈哈</div>
+                                        <div class="time"><span>.</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>15</i></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/avatar.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">以前用过你的板，现在更新了，更加高大上了，不知道现在升级的是什么价格。</div>
+                                        <div class="time"><span>依旧东方情</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>14</i></div> 
+                                    <div class="clear"></div>
+                                    <div class="floors-one">
+                                        <div class="floor-img"><a href="#"><img src="images/0914195143b0c2b1af6e90f-100x100.png"/></a></div>
+                                        <div class="floor-cont">
+                                            <div class="floor-cont-txt">这是镜像平台自用主题，不出售哦。</div>
+                                            <div class="time"><div class="floors-mark">1号杂工</div><span>Javin</span>2012-10-19<a href="#">登录以回复</a></div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/avatar.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">过来讨个链接位置。。。</div>
+                                        <div class="time"><span>ilikecss</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>13</i></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/avatar.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">基础前端资料站，www.58lou.com，后端前端完全独立开发，加个链接呗。。。</div>
+                                        <div class="time"><span>星空</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>12</i></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/avatar.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">镜像现在不交换链接了是吗？我网站正式运行8个月，PR值终于从0升到3了，过来碰运气看是否链接？</div>
+                                        <div class="time"><span>郑力个人主页</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>11</i></div>
+                                    <div class="clear"></div>
+                                    <div class="floors-one">
+                                        <div class="floor-img"><a href="#"><img src="images/0914195143b0c2b1af6e90f-100x100.png"/></a></div>
+                                        <div class="floor-cont">
+                                            <div class="floor-cont-txt">暂不交换链接，抱歉。</div>
+                                            <div class="time"><div class="floors-mark">1号杂工</div><span>Javin</span>2012-10-19<a href="#">登录以回复</a></div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="floors-one">
+                                        <div class="floor-img"><a href="#"><img src="images/0914195143b0c2b1af6e90f-100x100.png"/></a></div>
+                                        <div class="floor-cont">
+                                            <div class="floor-cont-txt">做的不错，加油！</div>
+                                            <div class="time"><div class="floors-mark">1号杂工</div><span>Javin</span>2012-10-19<a href="#">登录以回复</a></div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="floors-twice">
+                                            <div class="floor-img"><a href="#"><img src="images/avatar.png"/></a></div>
+                                            <div class="floor-cont">
+                                                <div class="floor-cont-txt">呵呵，没问题，我还会一如既往关注镜像的。</div>
+                                                <div class="time"><span>郑力个人主页</span>2012-10-19<a href="#">登录以回复</a></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/avatar.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">想跟您交换一个友链。不知道合不合适。www.i-wordpress.cn。谢谢哈</div>
+                                        <div class="time"><span>小生有礼</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>10</i></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/avatar.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">非常喜欢你们的主题，我的网站也是用wp，请抽空给我站提出建议。谢谢</div>
+                                        <div class="time"><span>暴走html代码</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>9</i></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/avatar.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">科技网站大全 <a href="#">http://www.kejihai.com/</a> 免费收录科技博客，希望做个友情链接，谢谢。</div>
+                                        <div class="time"><span>科技网站大全</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>8</i></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/avatar.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">改版了？主题做的非常漂亮，我都加了博主友链了，博主有时间来我这帮我看看<br/>蓝色树  <a href="#">http://www.lanseshu.com</a></div>
+                                        <div class="time"><span>蓝色树</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>7</i></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="floors-link">
+                                    <div class="floor-img"><a href="#"><img src="images/avatar.png"/></a></div>
+                                    <div class="floor-cont">
+                                        <div class="floor-cont-txt">专注移动互联网投资，全方位、全身心为创业服务。</div>
+                                        <div class="time"><span>国富福哈去</span>2012-10-20<a href="#">登录以回复</a></div>
+                                    </div>
+                                    <div class="number"><i>6</i></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                    <div class="pages">
+                    	<div class="pages-one">
+                        	<a href="#"><span><</span></a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+
+<div class="bottom">
+	<div class="inner">
+    	<div class="wei">
+        	<h3>镜像</h3>
+            <p>以用户为中心的摄影理念，专注于用户体验摄影，拥有国内外最新的摄影潮流趋势、独特而美的创意视觉、新颖而灵敏的思维意识、极致而生动的交互体验，更有严谨而通俗的技术教程！</p>
+            <p>唯然是镜像网的图片分享社区，以记录美丽、分享美好的创意理念，分享高品质创意、艺术、摄影、时尚、插画、摄影、唯美类精美图片。</p>
+        </div>
+        <dl>
+        	<dt>关于</dt>
+            <dd><a href="#">关于镜像</a></dd>
+            <dd><a href="#">留言联系</a></dd>
+            <dd><a href="#">友情链接</a></dd>
+            <dd><a href="#">负责声明</a></dd>
+            <dd><a href="#">网站地图</a></dd>
+        </dl>
+         <dl>
+        	<dt>栏目</dt>
+            <dd><a href="#">用户体验</a></dd>
+            <dd><a href="#">素材下载</a></dd>
+            <dd><a href="#">摄影欣赏</a></dd>
+            <dd><a href="#">主题商城</a></dd>
+            <dd><a href="#">唯然灵感</a></dd>
+        </dl>
+         <dl>
+        	<dt>友链</dt>
+            <dd><a href="#">前端观察</a></dd>
+            <dd><a href="#">手Q阅读中心</a></dd>
+            <dd><a href="#">FrozenUI</a></dd>
+            <dd><a href="#">摄影达人</a></dd>
+            <dd><a href="#">MAKA</a></dd>
+        </dl>
+        <div class="lxfs">
+        	<h3>关注</h3>
+            <p>Email: javin@jiawin.com</p>
+            <input class="text" type="text" placeholder="请输入您的邮箱"><input class="sub" type="submit" value="订阅">
+            <ul>
+            	<li><a href="#"><i class="fa fa-weibo"></i></a></li>
+                <li><a href="#"><i class="fa fa-tencent-weibo"></i></a></li>
+                <li><a href="#"><i class="fa fa-qq"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-weixin"></i></a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+<div class="clear"></div>
+<div class="footer">
+	<div class="inner">
+    	<p>Copyright © 2012-2016 <span>镜像摄影</span> Theme by <span>Javin zhong</span> All All Rights Reserved. 粤ICP备12073831号-1</p>
+    </div>
+</div>
+</body>
+</html>
+
+    
+    
+    
+    

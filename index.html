@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/base.css" rel="stylesheet">	
+    <script src="js/index_header.js"></script>
+    <script src="js/jquery-1.3.1.min.js"></script>
+    <script src="js/kxbdSuperMarquee.js"></script>
+   
+    <script>
+        window.onload=function(){
+            header();
+		  	$(function(){
+				//一次滚动一屏
+				$('#pic_loop').kxbdSuperMarquee({
+					distance:620,
+					btnGo:{left:'#goL',right:'#goR'},
+					time:4,
+					navId:'#mar3Nav',
+					direction:'left',
+					navId:'#marqueeNav', //导航容器ID，导航DOM:<ul><li>1</li><li>2</li><ul>,导航CSS:.navOn
+					eventNav:'click' //导航事件
+				});
+				$("#marqueeNav").find("ul li").text("");
+			});
+        }
+    </script>
+</head>
+<body>
+<div class="header">
+        <ul class="inner">
+            <ul id="logo">
+                <li class="logo"><a href="index.html"><img src="imgs/logo.png"></a> </li>
+                <li><a href="article.html">文章</a></li>
+                <li><a href="Appreciate.html">欣赏</a></li>
+                <li><a href="sucai.html">素材</a></li>
+                <li><a href="exchange.html">兑换</a></li>
+                <li><a href="activity.html">活动</a></li>
+                <li><a href="weiran.html">社区</a></li>
+                <li class="more">
+                    <a href="more.html">更多</a>
+                </li>
+            </ul>
+            <div class="header-right">
+                <ul>
+                    <li class="yang">
+                        <a id="search_btn" href="#"><i class="fa fa-search"></i></a>
+                        <div class="header-search">
+                            <span><i class="fa fa-search"></i></span>
+                            <input type="text" placeholder="输入关键字搜索…"/>
+                        </div>
+
+                    </li>
+                    <li class="btn-l"><a href="">登录</a></li>
+                    <li class="btn-r"><a href="">注册</a></li>
+
+                </ul>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+<div class="banner">
+	<img class="pic" src="imgs/banner.png">
+    <div class="inner">
+        <h1>热爱生活  享受乐趣</h1>
+        <a>Love life and enjoy the fun.</a>
+    </div>
+</div>
+<div class="notice">
+	<div class="inner">
+    	
+    	<ul class="index_icon">
+        	<li class="icon"><a href="#"><span>[03-22]</span>用户中心正式上线</a></li>
+            <li><a href="#"><span>[12-11]</span>新增个人主页展示，越看越有爱</a></li>
+            <li><a href="#"><span>[12-04]</span>镜像官网新版升级上线</a></li>
+            <li><a href="#"><span>[09-01]</span>新增QQ一键登录</a></li>
+            <li><a href="#"><span>[08-12]</span>镜像商城Beta版测试上线</a></li>
+        </ul>
+    </div>
+    <div class="content">
+    	<div class="inner">
+        	<div id="banner">
+            	<div class="left" id="goL"><i><</i></div>
+                <div class="right" id="goR"><i>></i></div>
+                <div id="marqueeNav">  
+                </div>
+                <div class="clear"></div>
+                <div id="pic_loop">
+                	<ul style="width:4960px">
+                        <li><a href="#"><img src="imgs/8.jpg"></a></li>
+                        <li><a href="#"><img src="imgs/9.jpg"></a></li>
+                        <li><a href="#"><img src="imgs/10.jpg"></a></li>
+                        <li><a href="#"><img src="imgs/11.jpg"></a></li> 
+                	</ul>
+                </div>
+            </div>
+            <div class="push">
+            	<div class="box"><div class="inner"><img src="imgs/6.jpg"></div></div>
+                <div class="box"><div class="inner"><img src="imgs/7.jpg"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="cool">
+	<div class="inner">
+    	<ul>
+        	<li>
+            	<div class="thumb">
+                    <div class="pc">
+                     	<div class="ban"></div>
+                    	<a href="#"><img src="imgs/1.jpg"></a>
+                        <div class="template">
+                            <i class="fa fa-bookmark"></i>
+                            <a href="#">高清图片</a>
+                            <span>67<i class="fa fa-fire"></i></span>
+                    	</div>
+                    </div>
+              	</div>
+					<a class="mb" href="#">一点点</a>
+                <div class="data">
+                	<p>15小时前</p>
+                    <span class="s1"><a href="#"><i class="fa fa-comment"></i>0</a></span>
+                    <span class="s2"><i class="fa fa-heart"></i>1</span>
+                </div>
+            </li>
+        	<li class="mar">
+            	<div class="thumb">
+                    <div class="pc">
+                     	<div class="ban"></div>
+                    	<a href="#"><img src="imgs/12.jpg"></a>
+                        <div class="template">
+                            <i class="fa fa-bookmark"></i>
+                            <a href="#">摄影艺术</a>
+                            <span>166<i class="fa fa-fire"></i></span>
+                    	</div>
+                    </div>
+              	</div>
+					<a class="mb" href="#">《Flower Nostalgia》怀旧时尚风</a>
+                <div class="data">
+                	<p>2天前</p>
+                    <span class="s1"><a href="#"><i class="fa fa-comment"></i>0</a></span>
+                    <span class="s2"><i class="fa fa-heart"></i>1</span>
+                </div>
+            </li>
+            <li>
+            	<div class="thumb">
+                    <div class="pc">
+                     	<div class="ban"></div>
+                    	<a href="#"><img src="imgs/li2.jpg"></a>
+                        <div class="template">
+                            <i class="fa fa-bookmark"></i>
+                            <a href="#">酷站欣赏</a>
+                            <span>252<i class="fa fa-fire"></i></span>
+                    	</div>
+                    </div>
+              	</div>
+					<a class="mb" href="#">La Marzocco 意大利浓缩咖啡机</a>
+                <div class="data">
+                	<p>5天前</p>
+                    <span class="s1"><a href="#"><i class="fa fa-comment"></i>0</a></span>
+                    <span class="s2"><i class="fa fa-heart"></i>0</span>
+                </div>
+            </li>
+            <li>
+            	<div class="thumb">
+                    <div class="pc">
+                     	<div class="ban"></div>
+                    	<a href="#"><img src="imgs/li3.jpg"></a>
+                        <div class="template">
+                            <i class="fa fa-bookmark"></i>
+                            <a href="#">酷站欣赏</a>
+                            <span>229<i class="fa fa-fire"></i></span>
+                    	</div>
+                    </div>
+              	</div>
+					<a class="mb" href="#">涵艺术 Han Art Agency</a>
+                <div class="data">
+                	<p>5天前</p>
+                    <span class="s1"><a href="#"><i class="fa fa-comment"></i>1</a></span>
+                    <span class="s2"><i class="fa fa-heart"></i>2</span>
+                </div>
+            </li>
+            <li>
+            	<div class="thumb">
+                    <div class="pc">
+                     	<div class="ban"></div>
+                    	<a href="#"><img src="imgs/2.jpg"></a>
+                        <div class="template">
+                            <i class="fa fa-bookmark"></i>
+                            <a href="#">酷站欣赏</a>
+                            <span>202<i class="fa fa-fire"></i></span>
+                    	</div>
+                    </div>
+              	</div>
+					<a class="mb" href="#">Fusion Nightclub Shanghai</a>
+                <div class="data">
+                	<p>5天前</p>
+                    <span class="s1"><a href="#"><i class="fa fa-comment"></i>0</a></span>
+                    <span class="s2"><i class="fa fa-heart"></i>0</span>
+                </div>
+            </li>
+            <li>
+            	<div class="thumb">
+                    <div class="pc">
+                     	<div class="ban"></div>
+                    	<a href="#"><img src="imgs/li5.jpg"></a>
+                        <div class="template">
+                            <i class="fa fa-bookmark"></i>
+                            <a href="#">酷站欣赏</a>
+                            <span>189<i class="fa fa-fire"></i></span>
+                    	</div>
+                    </div>
+              	</div>
+					<a class="mb" href="#">Cerez Bakery 克芮斯手感烘培</a>
+                <div class="data">
+                	<p>5天前</p>
+                    <span class="s1"><a href="#"><i class="fa fa-comment"></i>0</a></span>
+                    <span class="s2"><i class="fa fa-heart"></i>5</span>
+                </div>
+            </li>
+            <li>
+            	<div class="thumb">
+                    <div class="pc">
+                     	<div class="ban"></div>
+                    	<a href="#"><img src="imgs/li6.jpg"></a>
+                        <div class="template">
+                            <i class="fa fa-bookmark"></i>
+                            <a href="#">佳作欣赏</a>
+                            <span>193<i class="fa fa-fire"></i></span>
+                    	</div>
+                    </div>
+              	</div>
+					<a class="mb" href="#">Felicoz</a>
+                <div class="data">
+                	<p>5天前</p>
+                    <span class="s1"><a href="#"><i class="fa fa-comment"></i>0</a></span>
+                    <span class="s2"><i class="fa fa-heart"></i>2</span>
+                </div>
+            </li>
+            <li>
+            	<div class="thumb">
+                    <div class="pc">
+                     	<div class="ban"></div>
+                    	<a href="#"><img src="imgs/li7.jpg"></a>
+                        <div class="template">
+                            <i class="fa fa-bookmark"></i>
+                            <a href="#">摄影艺术</a>
+                            <span>234<i class="fa fa-fire"></i></span>
+                    	</div>
+                    </div>
+              	</div>
+					<a class="mb" href="#">RGB：Photography by David Benoliel 美國攝...</a>
+                <div class="data">
+                	<p>6天前</p>
+                    <span class="s1"><a href="#"><i class="fa fa-comment"></i>0</a></span>
+                    <span class="s2"><i class="fa fa-heart"></i>0</span>
+                </div>
+            </li>
+            <li>
+            	<div class="thumb">
+                    <div class="pc">
+                     	<div class="ban"></div>
+                    	<a href="#"><img src="imgs/3.jpg"></a>
+                        <div class="template">
+                            <i class="fa fa-bookmark"></i>
+                            <a href="#">交互设计</a>
+                            <span>1681<i class="fa fa-fire"></i></span>
+                    	</div>
+                    </div>
+              	</div>
+					<a class="mb" href="#">新版 Material Design 官方动效指南</a>
+                <div class="data">
+                	<p>2016-05-14</p>
+                    <span class="s1"><a href="#"><i class="fa fa-comment"></i>0</a></span>
+                    <span class="s2"><i class="fa fa-heart"></i>4</span>
+                </div>
+            </li>
+    
+    		<li>
+            	<div class="thumb">
+                    <div class="pc">
+                     	<div class="ban"></div>
+                    	<a href="#"><img src="imgs/4.jpg"></a>
+                        <div class="template">
+                            <i class="fa fa-bookmark"></i>
+                            <a href="#">前端开发</a>
+                            <span>1217<i class="fa fa-fire"></i></span>
+                    	</div>
+                    </div>
+              	</div>
+					<a class="mb" href="#">正则替换回调函数 preg_replace_callback()...</a>
+                <div class="data">
+                	<p>2016-05-08</p>
+                    <span class="s1"><a href="#"><i class="fa fa-comment"></i>0</a></span>
+                    <span class="s2"><i class="fa fa-heart"></i>5</span>
+                </div>
+            </li>
+            <li>
+            	<div class="thumb">
+                    <div class="pc">
+                     	<div class="ban"></div>
+                    	<a href="#"><img src="imgs/5.jpg"></a>
+                        <div class="template">
+                            <i class="fa fa-bookmark"></i>
+                            <a href="#">平面设计</a>
+                            <span>1190<i class="fa fa-fire"></i></span>
+                    	</div>
+                    </div>
+              	</div>
+					<a class="mb" href="#">《Diz-Diz Popcorn》品牌设计</a>
+                <div class="data">
+                	<p>2016-05-06</p>
+                    <span class="s1"><a href="#"><i class="fa fa-comment"></i>0</a></span>
+                    <span class="s2"><i class="fa fa-heart"></i>4</span>
+                </div>
+            </li>
+            <li>
+            	<div class="thumb">
+                    <div class="pc">
+                     	<div class="ban"></div>
+                    	<a href="#"><img src="imgs/li11.jpg"></a>
+                        <div class="template">
+                            <i class="fa fa-bookmark"></i>
+                            <a href="#">摄影艺术</a>
+                            <span>1067<i class="fa fa-fire"></i></span>
+                    	</div>
+                    </div>
+              	</div>
+					<a class="mb" href="#">扭曲现实的立场，Vincent Bourilhon的超现实...</a>
+                <div class="data">
+                	<p>2016-05-03</p>
+                    <span class="s1"><a href="#"><i class="fa fa-comment"></i>0</a></span>
+                    <span class="s2"><i class="fa fa-heart"></i>7</span>
+                </div>
+            </li>
+            
+    
+        </ul>
+    <div class="clear"></div>    
+    </div>
+</div>
+<!--按钮-->
+<div id="page">
+	<div class="inner">
+    	<div id="page-current">
+        	<a class="ys" href="#">1</a>
+            <a href="#">2</a>
+            <span>...</span>
+            <a href="#">19</a>
+            <a href="#"><i>></i></a>
+            <span class="gy">共19页</span>
+            <input class="txt" type="text" value="1"><input class="niu" type="submit" value="Go">
+            
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="syz">
+	<div class="inner">
+    	<ul>
+        	<li>
+            	<div class="thumb1">
+                     	<div class="ban"><i class="fa fa-link"></i></div>
+                    	<a href="#"><img src="imgs/tu1.jpg"></a>
+                        <div class="template1">
+                          	<p><a href="#">镂空唯美信封</a></p>
+                            <span class="zfd">2天前</span>
+                            <span><a href="#"><i class="fa fa-comment-o"></i>0</a></span>
+                            <span><a href="#"><i class="fa fa-eye"></i>67</a></span>
+                            <span><a href="#"><i class="fa fa-heart-o"></i></i>0</a></span>
+                    	</div> 
+              	</div>
+            </li>
+            <li>
+            	<div class="thumb1">
+                     	<div class="ban"><i class="fa fa-link"></i></div>
+                    	<a href="#"><img src="imgs/tu2.jpeg"></a>
+                        <div class="template1">
+                          	<p><a href="#">唯美婚纱</a></p>
+                            <span class="zfd">2天前</span>
+                            <span><a href="#"><i class="fa fa-comment-o"></i>0</a></span>
+                            <span><a href="#"><i class="fa fa-eye"></i>51</a></span>
+                            <span><a href="#"><i class="fa fa-heart-o"></i></i>0</a></span>
+                    	</div> 
+              	</div>
+            </li>
+            <li>
+            	<div class="thumb1">
+                     	<div class="ban"><i class="fa fa-link"></i></div>
+                    	<a href="#"><img src="imgs/tu3.jpeg"></a>
+                        <div class="template1">
+                          	<p><a href="#">奔跑吧兄弟</a></p>
+                            <span class="zfd">2天前</span>
+                            <span><a href="#"><i class="fa fa-comment-o"></i>0</a></span>
+                            <span><a href="#"><i class="fa fa-eye"></i>52</a></span>
+                            <span><a href="#"><i class="fa fa-heart-o"></i></i>0</a></span>
+                    	</div> 
+              	</div>
+            </li>
+            <li>
+            	<div class="thumb1">
+                     	<div class="ban"><i class="fa fa-link"></i></div>
+                    	<a href="#"><img src="imgs/tu4.jpeg"></a>
+                        <div class="template1">
+                          	<p><a href="#">孙允珠</a></p>
+                            <span class="zfd">2天前</span>
+                            <span><a href="#"><i class="fa fa-comment-o"></i>0</a></span>
+                            <span><a href="#"><i class="fa fa-eye"></i>53</a></span>
+                            <span><a href="#"><i class="fa fa-heart-o"></i></i>0</a></span>
+                    	</div> 
+              	</div>
+            </li>
+             <li>
+            	<div class="thumb1">
+                     	<div class="ban"><i class="fa fa-link"></i></div>
+                    	<a href="#"><img src="imgs/tu5.jpeg"></a>
+                        <div class="template1">
+                          	<p><a href="#">孙允珠</a></p>
+                            <span class="zfd">2天前</span>
+                            <span><a href="#"><i class="fa fa-comment-o"></i>0</a></span>
+                            <span><a href="#"><i class="fa fa-eye"></i>74</a></span>
+                            <span><a href="#"><i class="fa fa-heart-o"></i></i>0</a></span>
+                    	</div> 
+              	</div>
+            </li>
+            <li>
+            	<div class="thumb1">
+                     	<div class="ban"><i class="fa fa-link"></i></div>
+                    	<a href="#"><img src="imgs/tu6.jpeg"></a>
+                        <div class="template1">
+                          	<p><a href="#">天生丽质</a></p>
+                            <span class="zfd">2天前</span>
+                            <span><a href="#"><i class="fa fa-comment-o"></i>0</a></span>
+                            <span><a href="#"><i class="fa fa-eye"></i>41</a></span>
+                            <span><a href="#"><i class="fa fa-heart-o"></i></i>0</a></span>
+                    	</div> 
+              	</div>
+            </li>
+            <li>
+            	<div class="thumb1">
+                     	<div class="ban"><i class="fa fa-link"></i></div>
+                    	<a href="#"><img src="imgs/tu7.jpeg"></a>
+                        <div class="template1">
+                          	<p><a href="#">孙允珠</a></p>
+                            <span class="zfd">3天前</span>
+                            <span><a href="#"><i class="fa fa-comment-o"></i>0</a></span>
+                            <span><a href="#"><i class="fa fa-eye"></i>81</a></span>
+                            <span><a href="#"><i class="fa fa-heart-o"></i></i>0</a></span>
+                    	</div> 
+              	</div>
+            </li>
+            <li>
+            	<div class="thumb1">
+                     	<div class="ban"><i class="fa fa-link"></i></div>
+                    	<a href="#"><img src="imgs/tu8.jpeg"></a>
+                        <div class="template1">
+                          	<p><a href="#">时尚潮流</a></p>
+                            <span class="zfd">4天前</span>
+                            <span><a href="#"><i class="fa fa-comment-o"></i>0</a></span>
+                            <span><a href="#"><i class="fa fa-eye"></i>70</a></span>
+                            <span><a href="#"><i class="fa fa-heart-o"></i></i>0</a></span>
+                    	</div> 
+              	</div>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <div class="feel-go"><a href="#">取悦于灵感 - Love Inspiration <i class="fa fa-chevron-circle-right"></i></a></div>
+    </div>
+</div>
+<div class="content1">
+	<div class="inner">
+    	<ul>
+        	<li>
+            	<p><i class="fa fa-search"></i></p>
+                <h2>探索发现</h2>
+                <h3>探索创造性的思维，发现引领最新的设计潮流</h3>
+            </li>
+            <li>
+            	<p><i class="fa fa-user"></i></p>
+                <h2>用户设计</h2>
+                <h3>以用户为中心，以体验为至上，以细节为成败</h3>
+            </li>
+            <li>
+            	<p><i class="fa fa-paper-plane-o"></i></p>
+                <h2>情感传递</h2>
+                <h3>不只是图文信息，更多的是喜怒哀乐的情感</h3>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="feature">
+	<ul>
+    	<li><a href="#"><div class="item"></div></a></li>
+        <li><a href="#"><div class="item"></div></a></li>
+        <li><a href="#"><div class="item"></div></a></li>
+        <li><a href="#"><div class="item"></div></a></li>
+    </ul>
+    <div class="clear"></div>
+</div>
+
+<div class="bottom">
+	<div class="inner">
+    	<div class="wei">
+        	<h3>镜像</h3>
+            <p>以用户为中心的设计理念，专注于用户体验设计，拥有国内外最新的设计潮流趋势、独特而美的创意视觉、新颖而灵敏的思维意识、极致而生动的交互体验，更有严谨而通俗的技术教程！</p>
+            <p>唯然是镜像网的图片分享社区，以记录美丽、分享美好的创意理念，分享高品质创意、艺术、设计、时尚、插画、摄影、唯美类精美图片。</p>
+        </div>
+        <dl>
+        	<dt>关于</dt>
+            <dd><a href="#">关于镜像</a></dd>
+            <dd><a href="#">留言联系</a></dd>
+            <dd><a href="#">友情链接</a></dd>
+            <dd><a href="#">负责声明</a></dd>
+            <dd><a href="#">网站地图</a></dd>
+        </dl>
+         <dl>
+        	<dt>栏目</dt>
+            <dd><a href="#">用户体验</a></dd>
+            <dd><a href="#">素材下载</a></dd>
+            <dd><a href="#">设计欣赏</a></dd>
+            <dd><a href="#">主题商城</a></dd>
+            <dd><a href="#">唯然灵感</a></dd>
+        </dl>
+         <dl>
+        	<dt>友链</dt>
+            <dd><a href="#">前端观察</a></dd>
+            <dd><a href="#">手Q阅读中心</a></dd>
+            <dd><a href="#">FrozenUI</a></dd>
+            <dd><a href="#">设计达人</a></dd>
+            <dd><a href="#">MAKA</a></dd>
+        </dl>
+        <div class="lxfs">
+        	<h3>关注</h3>
+            <p>Email: javin@jiawin.com</p>
+            <input class="text" type="text" placeholder="请输入您的邮箱"><input class="sub" type="submit" value="订阅">
+            <ul>
+            	<li><a href="#"><i class="fa fa-weibo"></i></a></li>
+                <li><a href="#"><i class="fa fa-tencent-weibo"></i></a></li>
+                <li><a href="#"><i class="fa fa-qq"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-weixin"></i></a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+<div class="clear"></div>
+<div class="footer">
+	<div class="inner">
+    	<p>Copyright © 2012-2016 <span>镜像设计</span> Theme by <span>Javin zhong</span> All All Rights Reserved. 粤ICP备12073831号-1</p>
+    </div>
+</div>
+</body>
+</html>
